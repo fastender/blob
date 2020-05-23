@@ -93,7 +93,39 @@ Smart [Ikea roller blinds](https://www.ikea.com/de/de/p/kadrilj-rollo-kabellos-b
 
 * [VERA Plus Smart Home Controller](https://www.amazon.de/Vera-Smart-Gateway-Überwachungstechnik-MCVEVERA_Plus/dp/B01BVLVGZY) is used to control the Z-Wave devices, especially for the [FIBARO Roller Shutter 3 control](https://www.amazon.de/FIBARO-FIBEFGR-223-Roller-Shutter-3/dp/B07L5S38RN/ref=sr_1_1_sspa?__mk_de_DE=ÅMÅŽÕÑ&dchild=1&keywords=roller+shutter+3&qid=1590218162&quartzVehicle=72-820&replacementKeywords=roller+shutter&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWTBLN1NOVk9DQjJUJmVuY3J5cHRlZElkPUEwOTUxNjQzMUI1QkFTRkVSVDdPMiZlbmNyeXB0ZWRBZElkPUEwMjA2MTMwMzRWMU1YSVFNNjc3OSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=).
 
+<!-- HOME ASSISTANT -->
+## Home-Assistant
+My priority when selecting the hardware was a power-saving system. Usually a combination of a small motherboard with a relatively weak but power saving processor still outperforms the usual ready to use NAS devices. 
 
+Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8)
 
+<p align="center">
+  <a name="case" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.gif" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
+  <br>
+</p>
+
+<!-- LOVELACE -->
+## Lovelace
+My priority when selecting the hardware was a power-saving system. Usually a combination of a small motherboard with a relatively weak but power saving processor still outperforms the usual ready to use NAS devices. 
+
+Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8)
+
+<p align="center">
+  <a name="case" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.gif" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
+  <br>
+</p>
+
+<!-- AUTOMATIONS -->
+## Automations
+My priority when selecting the hardware was a power-saving system. Usually a combination of a small motherboard with a relatively weak but power saving processor still outperforms the usual ready to use NAS devices. 
 
 ![Screenshot of Home Assistant Header](https://i.imgur.com/vjDH1LJ.png)
+
+Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8)
+
+<p align="center">
+  <a name="case" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.gif" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
+  <br>
+</p>
+
+
