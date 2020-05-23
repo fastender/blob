@@ -106,12 +106,12 @@ Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hol
 
 <!-- LOVELACE -->
 ## Lovelace
-My priority when selecting the hardware was a power-saving system. Usually a combination of a small motherboard with a relatively weak but power saving processor still outperforms the usual ready to use NAS devices. 
+When designing the operation, it was very important for me to use a simple, minimalist system. It should not be overloaded and understandable.
 
-Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8)
+I was very much inspired by [Mattias Persson](https://github.com/matt8707/hass-config) when designing the Lovelace: 
 
 <p align="center">
-  <a name="case" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.gif" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
+  <a name="case" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/matt8707/hass-config/master/www/img/s_main.png" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
   <br>
 </p>
 
