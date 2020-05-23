@@ -4,10 +4,10 @@
   <br>
   The Blob
 </h1>
-<h4 align="center">Be sure to :star: my configuration repo so you can keep up to date on any daily progress.</h4>
 
-<p align="center"><font size="8">
-As a home server, the Blob is the on-board computer for the intelligent building.</p>
+
+<h3 align="center"><font size="8">
+As a home server, the Blob is the on-board computer for the intelligent building.</h3>
   
 <h4 align="center">
   <img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.jpg" alt="The Blob" width="200">
