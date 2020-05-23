@@ -11,7 +11,6 @@ As a home server, the Blob is the on-board computer for the intelligent building
 
 <h1 align="center">
   <a name="logo" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.jpg" alt="The Blob" width="200"></a>
-  <br>
 </h1>
 
 
