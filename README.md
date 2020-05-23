@@ -97,25 +97,18 @@ Smart [Ikea roller blinds](https://www.ikea.com/de/de/p/kadrilj-rollo-kabellos-b
 ## Home-Assistant
 Hass.io was installed on a virtual [Ubuntu Server 18.04](https://ubuntu.com/download/server) according to these [instructions](https://www.juanmtech.com/set-up-hassio-in-docker-and-in-an-ubuntu-server/). The ConBee II USB stick is attached to the Hass.io VM using Unraid USB pass-through.
 
-Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8).
-
-<p align="center">
-  <a name="case" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.gif" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
-  <br>
-</p>
-
 <!-- LOVELACE -->
 ## Lovelace
 When designing the operation, it was very important for me to use a simple, minimalist system. It should not be overloaded and understandable.
-
-I was very much inspired by [Mattias Persson](https://github.com/matt8707/hass-config) when designing the Lovelace. I would also like to say that without the really very helpful integrations of the ingenious [Thomas Lovén](https://github.com/thomasloven) and [Custom cards for Home Assistant](https://github.com/custom-cards)
-my design could never be realized. Many thanks!
 
 <p align="center">
   <a name="Mattias Persson" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/Mattias Persson.png" alt="Mattias Persson" width="200"></a>
     <a name="Thomas Lovén" href="https://github.com/thomasloven"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/Thomas Lovén.png" alt="Thomas Lovén" width="200"></a>
     <a name="Custom cards for Home Assistant" href="https://github.com/custom-cards"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/Custom cards for Home Assistant.png" alt="Custom cards for Home Assistant" width="200"></a>
 </p>
+
+I was very much inspired by [Mattias Persson](https://github.com/matt8707/hass-config) when designing the Lovelace. I would also like to say that without the really very helpful integrations of the ingenious [Thomas Lovén](https://github.com/thomasloven) and [Custom cards for Home Assistant](https://github.com/custom-cards)
+my design could never be realized. Many thanks!
 
 <!-- AUTOMATIONS -->
 ## Automations
