@@ -97,7 +97,7 @@ Hass.io was installed on a virtual [Ubuntu Server 18.04](https://ubuntu.com/down
 
 <!-- LOVELACE -->
 ## Lovelace
-When designing the operation, it was very important for me to use a simple, minimalist system. It should not be overloaded and understandable.
+When designing, it was very important for me to use a simple, minimalist system. It should not be overloaded and should be understandable.
 
 <p align="center">
   <a name="Mattias Persson" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/Mattias Persson.png" alt="Mattias Persson" width="200"></a>
