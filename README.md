@@ -51,22 +51,22 @@ My current system consumes about 26 watts when idle and with rotating hard drive
 
 <!-- SOFTWARE -->
 ## Software
-As operating system I use the Linux distribution [unRaid](https://unraid.net).
+As operating system I use the Linux distribution [unRAID](https://unraid.net).
 
 unRAID is in my opinion the best NAS operating system (apart from the finished NAS systems) I have come across so far, if you are looking for an easy and uncomplicated use. Similar to Apple's motto "it simply works", you don't have to deal with the terminal or anything like that. For everything there is a simple and clear UI. If you ever need help or a feature is missing, the community is very helpful, whether via the App Store or simply with advice.
 
 <p align="center">
-  <a name="logo" href="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-1.png"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-1.png" alt="Unraid - Dashboard" width="200"></a>
+  <a name="logo" href="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-1.png"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-1.png" alt="unRAID - Dashboard" width="200"></a>
   <br>
-  Unraid - Dashboard<br>
+  unRAID - Dashboard<br>
 </p>
 
 unRaid provides network storage for the media, which also allows streaming to 1-3 devices simultaneously. The system is low-maintenance and no exaggerated previous knowledge is necessary.
 
 <p align="center">
-  <a name="logo" href="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-2.png"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-2.png" alt="Unraid - Main" width="200"></a>
+  <a name="logo" href="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-2.png"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-2.png" alt="unRAID - Main" width="200"></a>
   <br>
-  Unraid - Main<br>
+  unRAID - Main<br>
 </p>
 
 For the OS the USB stick is used, the SSD serves as a cache and hosts the data of dockers and VMs. The hard drives contain the data used by the Plex, for example.
