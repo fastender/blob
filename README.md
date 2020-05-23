@@ -6,12 +6,12 @@
 </h1>
 <h4 align="center">Be sure to :star: my configuration repo so you can keep up to date on any daily progress.</h4>
 
-<p><font size="4">
-As a home server, the Blob is the on-board computer for the intelligent building.</p>
+<h4 align="center"><font size="4">
+As a home server, the Blob is the on-board computer for the intelligent building.</h4>
   
-<h1 align="center">
-  <a name="logo" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.jpg" alt="The Blob" width="200"></a>
-</h1>
+<h4 align="center">
+  <img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.jpg" alt="The Blob" width="200">
+</h4>
 
 <p><font size="4">It connects the electrical installation of the house with the computer network and the Internet. In this way it enables central control of intelligent building technology via a large number of operating devices - regardless of location. In addition, numerous other technologies such as door intercoms, cameras and audio systems as well as third-party systems for the sanitary, kitchen and entertainment areas can be seamlessly integrated into the building control system. The HomeServer is designed to provide numerous advantages such as the benefits of mobile technology control, as well as the full experience with maximum convenience, security and energy efficiency. At the same time, the award-winning Home Assistant interface makes the control of intelligent technology a pleasure by allowing complex systems to be controlled easily - with just one finger.</p>
 
