@@ -28,7 +28,7 @@ As a home server, the Blob <br>is the on-board computer for the intelligent buil
 * [Home Assistant](#home-assistant)
   * [Lovelace](#lovelace)
   * [Automations](#automations)
-* [To-Do List](#To-Do-List)
+* [To-Do-List](#To-Do-List)
 
 
 <!-- HARDWARE -->
