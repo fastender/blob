@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <a name="logo" href="http://www.vCloudInfo.com/tag/iot"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/the%20blob.gif" alt="Bear Stone Smart Home" width="200"></a>
+  <a name="logo" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/the%20blob.gif" alt="The Blob" width="200"></a>
   <br>
   The Blob - Documentation
 </h1>
