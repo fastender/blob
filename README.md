@@ -97,7 +97,7 @@ Smart [Ikea roller blinds](https://www.ikea.com/de/de/p/kadrilj-rollo-kabellos-b
 ## Home-Assistant
 Hass.io was installed on a virtual [Ubuntu Server 18.04](https://ubuntu.com/download/server) according to these [instructions](https://www.juanmtech.com/set-up-hassio-in-docker-and-in-an-ubuntu-server/). The ConBee II USB stick is attached to the Hass.io VM using Unraid USB pass-through.
 
-Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8)
+Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8).
 
 <p align="center">
   <a name="case" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.gif" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
