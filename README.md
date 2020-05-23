@@ -108,13 +108,13 @@ Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hol
 ## Lovelace
 When designing the operation, it was very important for me to use a simple, minimalist system. It should not be overloaded and understandable.
 
-I was very much inspired by [Mattias Persson](https://github.com/matt8707/hass-config) when designing the Lovelace. I would also like to say that without the really very helpful integrations of and 
+I was very much inspired by [Mattias Persson](https://github.com/matt8707/hass-config) when designing the Lovelace. I would also like to say that without the really very helpful integrations of the ingenious [Thomas Lovén](https://github.com/thomasloven) and [Custom cards for Home Assistant](https://github.com/custom-cards)
 my design could never be realized. 
 
 <p align="center">
-  <a name="case" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/matt8707/hass-config/master/www/img/s_main.png" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
-    <a name="case" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/matt8707/hass-config/master/www/img/s_main.png" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
-    <a name="case" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/matt8707/hass-config/master/www/img/s_main.png" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
+  <a name="Mattias Persson" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/matt8707/hass-config/master/www/img/s_main.png" alt="Mattias Persson" width="200"></a>
+    <a name="Thomas Lovén" href="https://github.com/thomasloven"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/Thomas Lovén.png" alt="Thomas Lovén" width="200"></a>
+    <a name="Custom cards for Home Assistant" href="https://github.com/custom-cards"><img src="https://raw.githubusercontent.com/matt8707/hass-config/master/www/img/s_main.png" alt="Custom cards for Home Assistant" width="200"></a>
   <br>
 </p>
 
