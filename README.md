@@ -12,7 +12,6 @@ As a home server, the Blob is the on-board computer for the intelligent building
 <h1 align="center">
   <a name="logo" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.jpg" alt="The Blob" width="200"></a>
   <br>
-  The Blob
 </h1>
 
 
@@ -37,11 +36,11 @@ My priority when selecting the hardware was a power-saving system. Usually a com
 
 As a suitable mainboard/CPU combination I decided for the [ASRock J5005-ITX](https://www.amazon.de/Asrock-J5005-MB-Intel-Gemini-Lake/dp/B079G91MQ1/ref=cm_cr_arp_d_product_top?ie=UTF8) with current Intel Gemini Lake architecture. The board has four SATA connectors. Currently one SSD and two hard disks are connected. The maximum power consumption of the board is 10 Watt.
 
-<h1 align="center">
+<p align="center">
   <a name="case" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.gif" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
   <br>
-  Inter-Tech X-608 Mid Tower Case
-</h1>
+
+</p>
  
 Connected are beside the [SanDisk Cruzer Fit Z33 16GB USB stick](https://www.amazon.de/SanDisk-Cruzer-16GB-USB-Stick-schwarz/dp/B005FYNSZA) with 2x [Seagate SkyHawk 10 TB](https://www.amazon.de/Seagate-ST10000VX0004-SkyHawk-interne-Festplatte/dp/B01IAY6AC4). 2x8 GB RAM from [Crucial](https://www.amazon.de/Crucial-CT8G4SFS824A-Speicher-PC4-19200-260-Pin/dp/B01BIWKP58/ref=sr_1_3?__mk_de_DE=ÅMÅŽÕÑ&dchild=1&keywords=Crucial+CT8G4SFS824A&qid=1590216768&s=computers&sr=1-3) and an SSD from [Samsung 850 EVO](https://www.amazon.de/Samsung-MZ-75E500B-EU-interne-schwarz/dp/B00P73B1E4/ref=sr_1_3?__mk_de_DE=ÅMÅŽÕÑ&dchild=1&keywords=850+evo+500&qid=1590216809&s=computers&sr=1-3) are used.
 
