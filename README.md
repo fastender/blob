@@ -69,9 +69,9 @@ For me it was important from the beginning that all electrical devices can be op
 
 Alexa Echo Dot is used for voice control, but Siri can also be used at any time. 
 
-2x SONOS Play 3 are used as speakers, which are connected to the Apple TV. For security 3x Arlo Ultra 4k cameras are used. The CO monitoring is done by three Nest devices. The alarm is secured via Somfy.
+2x [SONOS Play 3](https://www.sonos.com/de-de/products/wireless-speakers)are used as speakers, which are connected to the [Apple TV](https://www.apple.com/de/shop/buy-tv/apple-tv-hd/32-gb). For security 3x [Arlo Ultra 4k](https://www.arlo.com/de/products/arlo-ultra/default.aspx) cameras are used. The CO monitoring is done by three [Nest](https://store.google.com/de/product/nest_protect_2nd_gendevices). The alarm is secured via [Somfy](https://www.somfy.de/produkte/sicherheit/vernetzte-sicherheitslosungen-fur-ihr-zuhause).
 
-In addition to over 50 Philips Hue and Ikea lamps, various sensors for movement, water monitoring, door and window monitoring of the brand Aqara, as well as smart sockets from OSRAM are used. EVE Aqua is used for watering the garden.
+In addition to over 50 [Philips Hue](https://www2.meethue.com/de-de/product-overview) and Ikea lamps [Philips Hue](https://www.ikea.com/de/de/p/tradfri-led-leuchtmittel-e27-600-lm-kabellos-dimmbar-farb-und-weissspektrum-farb-und-weissspektrum-rund-opalweiss-00408612/), various sensors for movement, water monitoring, door and window monitoring of the brand [Aqara](https://www.aqara.com/us/home.html), as well as smart sockets from OSRAM are used. [EVE Aqua](https://www.evehome.com/de/eve-aqua) is used for watering the garden.
 
 Smart Ikea roller blinds are used. Older electric roller blinds are made smart via SwitchBot.
 <hr>
