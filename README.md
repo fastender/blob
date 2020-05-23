@@ -57,7 +57,19 @@ As operating system I use the Linux distribution [unRaid](https://unraid.net).
 
 unRAID is in my opinion the best NAS operating system (apart from the finished NAS systems) I have come across so far, if you are looking for an easy and uncomplicated use. Similar to Apple's motto "it simply works", you don't have to deal with the terminal or anything like that. For everything there is a simple and clear UI. If you ever need help or a feature is missing, the community is very helpful, whether via the App Store or simply with advice.
 
+<p align="center">
+  <a name="logo" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-1.png" alt="The Blob" width="200"></a>
+  <br>
+  The Blob<br></br>
+</p>
+
 unRaid provides network storage for the media, which also allows streaming to 1-3 devices simultaneously. The system is low-maintenance and no exaggerated previous knowledge is necessary.
+
+<p align="center">
+  <a name="logo" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/unraid-1.png" alt="The Blob" width="200"></a>
+  <br>
+  The Blob<br></br>
+</p>
 
 For the OS the USB stick is used, the SSD serves as a cache and hosts the data of dockers and VMs. The hard drives contain the data used by the Plex, for example.
 
