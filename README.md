@@ -25,12 +25,10 @@ As a home server, the Blob <br>is the on-board computer for the intelligent buil
 * [Hardware](#hardware)
 * [Software](#software)
 * [Devices](#devices)
-* [Todo List](#todo-list)
 * [Home Assistant](#home-assistant)
   * [Lovelace](#lovelace)
   * [Automations](#automations)
-
-
+* [Todo List](#todo-list)
 
 
 <!-- HARDWARE -->
@@ -110,17 +108,14 @@ When designing the operation, it was very important for me to use a simple, mini
 I was very much inspired by [Mattias Persson](https://github.com/matt8707/hass-config) when designing the Lovelace. I would also like to say that without the really very helpful integrations of the ingenious [Thomas Lovén](https://github.com/thomasloven) and [Custom cards for Home Assistant](https://github.com/custom-cards)
 my design could never be realized. Many thanks!
 
+More coming soon!
+
 <!-- AUTOMATIONS -->
 ## Automations
-My priority when selecting the hardware was a power-saving system. Usually a combination of a small motherboard with a relatively weak but power saving processor still outperforms the usual ready to use NAS devices. 
+More coming soon!
 
 ![Screenshot of Home Assistant Header](https://i.imgur.com/vjDH1LJ.png)
 
-Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8)
-
-<p align="center">
-  <a name="case" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.gif" alt="Inter-Tech X-608 Mid Tower Case" width="200"></a>
-  <br>
-</p>
-
-
+<!-- TODO-LIST -->
+## todo-list
+More coming soon!
