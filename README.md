@@ -2,7 +2,7 @@
 <h1 align="center">
   <a name="logo" href="https://github.com/fastender/homeassistant"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/the%20blob.gif" alt="The Blob" width="200"></a>
   <br>
-  The Blob - Documentation
+  The Blob
 </h1>
 <h4 align="center">Be sure to :star: my configuration repo so you can keep up to date on any daily progress.</h4>
 
