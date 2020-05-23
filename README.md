@@ -95,7 +95,7 @@ Smart [Ikea roller blinds](https://www.ikea.com/de/de/p/kadrilj-rollo-kabellos-b
 
 <!-- HOME ASSISTANT -->
 ## Home-Assistant
-My priority when selecting the hardware was a power-saving system. Usually a combination of a small motherboard with a relatively weak but power saving processor still outperforms the usual ready to use NAS devices. 
+Hass.io was installed on a virtual [Ubuntu Server 18.04](https://ubuntu.com/download/server) according to these [instructions](https://www.juanmtech.com/set-up-hassio-in-docker-and-in-an-ubuntu-server/). The ConBee II USB stick is attached to the Hass.io VM using Unraid USB pass-through.
 
 Look to the sexy Inter-Tech X-608 Infinity Mirror RGB PC Case, with a "Black Hole" on the front and awesome RGB lighting effects. [See it in the Dark](https://www.youtube.com/watch?v=olyw9uxEDu8)
 
