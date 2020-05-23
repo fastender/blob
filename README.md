@@ -115,7 +115,6 @@ my design could never be realized. Many thanks!
   <a name="Mattias Persson" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/Mattias Persson.png" alt="Mattias Persson" width="200"></a>
     <a name="Thomas Lovén" href="https://github.com/thomasloven"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/Thomas Lovén.png" alt="Thomas Lovén" width="200"></a>
     <a name="Custom cards for Home Assistant" href="https://github.com/custom-cards"><img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/Custom cards for Home Assistant.png" alt="Custom cards for Home Assistant" width="200"></a>
-  <br>
 </p>
 
 <!-- AUTOMATIONS -->
