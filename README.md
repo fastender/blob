@@ -7,7 +7,7 @@
 
 
 <h3 align="center"><font size="8">
-As a home server, the Blob is the on-board computer for the intelligent building.</h3>
+As a home server, the Blob <br>is the on-board computer for the intelligent building.</h3>
   
 <h4 align="center">
   <img src="https://raw.githubusercontent.com/fastender/homeassistant/master/logos/case.jpg" alt="The Blob" width="200">
