@@ -108,6 +108,9 @@ When designing, it was very important for me to use a simple, minimalist system.
 I was very much inspired by [Mattias Persson](https://github.com/matt8707/hass-config) when designing the Lovelace. I would also like to say that without the really very helpful integrations of the ingenious [Thomas Lovén](https://github.com/thomasloven) and [Custom cards for Home Assistant](https://github.com/custom-cards)
 my design could never be realized. Many thanks!
 
+The [Lovelace YAML-Modus](https://www.home-assistant.io/lovelace/yaml-mode/) is used and the codes are [splitted](https://www.home-assistant.io/docs/configuration/splitting_configuration/) with !includes, [Lovelace Decluttering Card](https://github.com/custom-cards/decluttering-card) and [templates](https://github.com/custom-cards/button-card#configuration-templates).
+
+
 More coming soon!
 
 <!-- AUTOMATIONS -->
