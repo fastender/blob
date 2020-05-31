@@ -1,0 +1,25 @@
+        card:
+          - width: 200px
+          - height: 70px
+
+          - border-radius: 50% 
+          - box-shadow: none
+          - transition: none
+
+          - background-color: '#fff'          
+          - color: 'rgba(255, 255, 255, 0.3)'
+          - font-size: 12px
+        custom_fields:
+          icon_hue:
+            - top: 5%
+            - left: 14%
+            - width: 60px
+            - position: absolute
+          info:
+            - width: 0px
+            - position: absolute
+
+        img_cell:
+          - align-self: start
+          - text-align: start
+

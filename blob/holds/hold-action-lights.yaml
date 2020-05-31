@@ -1,0 +1,332 @@
+        action: call-service
+        service: browser_mod.popup
+        service_data:
+          card:
+            cards:
+
+              - type: 'custom:button-card'          
+                custom_fields:
+                  icon_shade: >
+                    <svg viewBox="0 0 50 50"><path d="M26.4 25.6c.6-.3 1.1-.7
+                    1.1-1.3L25 17.9l-2.5 6.4c0 .7.6 1.1 1.1
+                    1.3v20.8h-5.5v2.7h13.7v-2.7h-5.5V25.6z" fill="#9da0a2"/><path
+                    d="M24.6.9l-9.4.5c-.6.1-1.9 0-2.5 2.1s-2.4 9.1-4 16.9c-.2.7-.5
+                    2-.5 2.3s-.4 1.6.9 1.6c.8.1 7.4.3 15.9.3 8.6 0 15.1-.3 15.9-.3
+                    1.3-.1.9-1.3.9-1.6s-.3-1.6-.5-2.3c-1.6-7.8-3.4-14.8-4-16.9s-1.9-2-2.5-2.1c-1.6-.2-6.9-.4-9.4-.5"
+                    fill="var(--button-card-light-color-no-temperature)"/></svg>
+                entity: light.arbeitszimmer
+                name: Stehlampe 2
+                show_state: true
+                styles:
+                  custom_fields:
+                    icon_shade:
+                      - top: 20px
+                      - left: 10px
+                      - width: 40px
+                      - position: absolute
+                template: light
+
+            
+            
+              - type: horizontal-stack
+                cards:
+                  - style: 'ha-card { width: 10px; }'
+                    template: es-vacuum
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: vacuum
+                      - entity-1: vacuum.staubsauger
+                      - name-1: Staubi 
+                  - style: 'ha-card { width: 10px; }'
+                    template: es-vacuum
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: vacuum
+                      - entity-1: vacuum.staubsauger
+                      - name-1: Staubi 
+                  - style: 'ha-card { width: 10px; }'
+                    template: es
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: arbeitszimmer
+                      - entity-1: light.arbeitszimmer
+                      - name-1: Arbeitszimmer
+                      - state-1: 'on'
+                      - state-2: 'off'
+                      - circle-1: entity.attributes.brightness
+                      - circle-2: (100 / 254)
+                      - circle-3: 'on'
+                      - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                      - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+                            
+              - entities:
+                  - entity: light.tischlampe
+                  - entity: vacuum.staubsauger
+                  - template: es-vacuum
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: vacuum
+                      - entity-1: vacuum.staubsauger
+                      - name-1: Staubi 
+                  - style: 'ha-card { width: 10px; }'
+                    template: es
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: arbeitszimmer
+                      - entity-1: light.arbeitszimmer
+                      - name-1: Arbeitszimmer
+                      - state-1: 'on'
+                      - state-2: 'off'
+                      - circle-1: entity.attributes.brightness
+                      - circle-2: (100 / 254)
+                      - circle-3: 'on'
+                      - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                      - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+                type: entities    
+
+
+
+
+            
+              - entities:
+                  - actionSize: 50px
+                    actions:
+                      - icon: 'fas:cogs'
+                        name: Einstellungen
+                        service: browser_mod.popup
+                        service_data:
+                          card:
+                            entities:
+                            
+                              - type: vertical-stack
+                                cards:
+                                  - type: horizontal-stack
+                                    cards:
+                                      - style: 'ha-card { width: 10px; }'
+                                        template: es-vacuum
+                                        type: 'custom:decluttering-card'
+                                        variables:
+                                          - template: vacuum
+                                          - entity-1: vacuum.staubsauger
+                                          - name-1: Staubi 
+                                      - style: 'ha-card { width: 10px; }'
+                                        template: es-vacuum
+                                        type: 'custom:decluttering-card'
+                                        variables:
+                                          - template: vacuum
+                                          - entity-1: vacuum.staubsauger
+                                          - name-1: Staubi 
+                            
+                              - actionSize: 50px
+                                actions:
+                                  - icon: 'fas:cogs'
+                                    name: Einstellungen
+                                    service: browser_mod.popup
+                                    service_data:
+                                      card:
+                                      deviceID: this
+                                      style:
+                                        '--ha-card-background': transparent
+                                        '--ha-card-border-radius': transparent !important
+                                        '--iron-icon-fill-color': '#fff'
+                                        '--ha-card-box-shadow': 0px 5px '#000'
+                                        box-shadow: 0px 11px '#000'
+                                        background: 'rgba(0, 0, 0, 0.95)'
+                                        border-radius: 20px
+                                        font-family: San Francisco !important
+                                        font-weight: 700
+                                        opacity: 1
+                                      title: ' '
+                                  - icon: 'fas:sun'
+                                    name: Hell
+                                    service: scene.turn_on
+                                    service_data:
+                                      entity_id: '[[scene-hell]]'
+                                  - icon: 'fas:moon'
+                                    name: Relax
+                                    service: scene.turn_on
+                                    service_data:
+                                      entity_id: '[[scene-relax]]'
+                                actionsInARow: 3
+                                borderRadius: 20px
+                                brightnessHeight: 200px
+                                brightnessWidth: 10px
+                                entity: '[[entity-1]]'
+                                fullscreen: false
+                                icon: true
+                                sliderColor: '#ec543f'
+                                sliderHeight: 200px
+                                sliderWidth: 10px
+                                sliderTrackColor: 'rgba(25, 25, 25, 0.9)'
+                                style: |
+                                  ha-card {
+                                    --ha-card-box-shadow: none !important;
+                                    --ha-card-box-shadow: unset !important;
+                                    box-shadow: 0px 5px rgba(0,0,0,1) !important;
+                                    border-radius: 1em;
+                                    background: rgba(0, 0, 0, 0.9);
+                                    padding: 20px;
+                                    font-family: 'San Francisco';
+                                    font-weight: 700;
+                                  }
+                                  .card-header {
+                                    margin-left: 0.4em;
+                                    margin-bottom: 0.1em;
+                                    font-family: 'San Francisco';
+                                    letter-spacing: 0.005em;
+                                    font-weight: 700;
+                                  }
+                                
+                                  #popup > div.action-holder > div > div {
+                                    margin: 0em 1em 1em 1em;
+                                    font-family: 'San Francisco';
+                                    font-weight: 700;
+                                    font-size: 0.9em;
+                                  }
+                                  div > div > h4 {
+                                    color: rgba(255, 255, 255, 1);
+                                    margin: -1.8em 0 0.7em 0;
+                                    font-size: 1.9em;
+                                    font-weight: 700;
+                                    font-family: 'San Francisco';
+                                    letter-spacing: 0.04em;
+                                    margin-top: -20px !important;
+                                  }  
+                                  .action-row {
+                                    padding-bottom: 0px !important;
+                                  }
+                                  .range-holder input[type="range"] {
+                                    transform: rotate(360deg) !important;
+                                    margin-top: -160px !important;
+                                    --slider-thumb-color: #ec543f !important;
+                                  }
+                                  .action-holder {
+                                    margin-top: -195px !important;
+                                  }
+                                  #states {
+                                    box-shadow: transparent !important;
+                                  } 
+                                  #popup {
+                                    margin: 0 0 0.8em 0;
+                                  } 
+                                  #popup > div.range-holder >
+                                  input[type=range]::-webkit-slider-thumb {
+                                    border: 100%
+                                    height: 100%
+                                    width: 10px;
+                                    cursor: pointer;
+                                  }
+                                  --ha-card-border-radius: transparent
+                                type: 'custom:light-popup-card'
+                            show_header_toggle: false
+                            type: entities
+                          deviceID: this
+                          style:
+                            '--ha-card-background': transparent
+                            '--ha-card-border-radius': transparent !important
+                            '--iron-icon-fill-color': '#fff'
+                            '--ha-card-box-shadow': 0px 5px '#000'
+                            box-shadow: 0px 11px '#000'
+                            background: 'rgba(0, 0, 0, 0.95)'
+                            border-radius: 20px
+                            font-family: San Francisco !important
+                            font-weight: 700
+                            opacity: 1
+                          title: ' '
+                      - icon: 'fas:sun'
+                        name: Hell
+                        service: scene.turn_on
+                        service_data:
+                          entity_id: '[[scene-hell]]'
+                      - icon: 'fas:moon'
+                        name: Relax
+                        service: scene.turn_on
+                        service_data:
+                          entity_id: '[[scene-relax]]'
+                    actionsInARow: 3
+                    borderRadius: 20px
+                    brightnessHeight: 200px
+                    brightnessWidth: 10px
+                    entity: '[[entity-1]]'
+                    fullscreen: false
+                    icon: true
+                    sliderColor: '#ec543f'
+                    sliderHeight: 200px
+                    sliderWidth: 10px
+                    sliderTrackColor: 'rgba(25, 25, 25, 0.9)'
+                    style: |
+                      ha-card {
+                        --ha-card-box-shadow: none !important;
+                        --ha-card-box-shadow: unset !important;
+                        box-shadow: 0px 5px rgba(0,0,0,1) !important;
+                        border-radius: 1em;
+                        background: rgba(0, 0, 0, 0.9);
+                        padding: 20px;
+                        font-family: 'San Francisco';
+                        font-weight: 700;
+                      }
+                      .card-header {
+                        margin-left: 0.4em;
+                        margin-bottom: 0.1em;
+                        font-family: 'San Francisco';
+                        letter-spacing: 0.005em;
+                        font-weight: 700;
+                      }
+                    
+                      #popup > div.action-holder > div > div {
+                        margin: 0em 1em 1em 1em;
+                        font-family: 'San Francisco';
+                        font-weight: 700;
+                        font-size: 0.9em;
+                      }
+                      div > div > h4 {
+                        color: rgba(255, 255, 255, 1);
+                        margin: -1.8em 0 0.7em 0;
+                        font-size: 1.9em;
+                        font-weight: 700;
+                        font-family: 'San Francisco';
+                        letter-spacing: 0.04em;
+                        margin-top: -20px !important;
+                      }  
+                      .action-row {
+                        padding-bottom: 0px !important;
+                      }
+                      .range-holder input[type="range"] {
+                        transform: rotate(360deg) !important;
+                        margin-top: -160px !important;
+                        --slider-thumb-color: #ec543f !important;
+                      }
+                      .action-holder {
+                        margin-top: -195px !important;
+                      }
+                      #states {
+                        box-shadow: transparent !important;
+                      } 
+                      #popup {
+                        margin: 0 0 0.8em 0;
+                      } 
+                      #popup > div.range-holder >
+                      input[type=range]::-webkit-slider-thumb {
+                        border: 100%
+                        height: 100%
+                        width: 10px;
+                        cursor: pointer;
+                      }
+                      --ha-card-border-radius: transparent
+                    type: 'custom:light-popup-card'
+                show_header_toggle: false
+                type: entities
+                
+            type: 'custom:stack-in-card'
+            mode: vertical
+          deviceID: this
+          style:
+            '--ha-card-background': transparent
+            '--ha-card-border-radius': transparent
+            '--iron-icon-fill-color': '#fff'
+            background: 'rgba(0, 0, 0, 0.95)'
+            border-radius: 20px
+            box-shadow: 0px 5px rgba(0,0,0,1) !important;
+            font-family: San Francisco !important;
+            font-weight: 700 !important;
+          title: ' '

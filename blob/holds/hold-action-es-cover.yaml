@@ -1,0 +1,101 @@
+        action: call-service
+        service: browser_mod.popup
+        service_data:
+          card:
+            cards:
+
+              - type: custom:layout-card
+                layout: vertical
+                column_width: 24%
+                cards:
+                  - template: es-icon
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: '[[template]]'
+                      - entity-1: '[[entity-1]]'
+                      - name-1: '[[name-1]]'
+                      - state-1: 'open'
+                      - state-2: 'closed'
+                      - circle-1: entity.attributes.current_position
+                      - circle-2: 1
+                      - circle-3: 'open'
+                      - circle-4: current_position
+                      - scene-hell: '[[scene-hell]]'
+                      - scene-relax: '[[scene-relax]]'
+
+              - type: custom:hui-vertical-stack-card
+                cards:
+                - style: 'ha-card { width: 10px; }'
+                  template: device
+                  type: 'custom:decluttering-card'
+                  variables:
+                    - content: '[[name-1]]'
+                                    
+              - entities:
+                  - actionSize: 50px
+                    actions:
+                      - icon: 'mdi:brightness-5'
+                        name: Hell
+                        service: scene.turn_on
+                        service_data:
+                          entity_id: '[[scene-hell]]'
+                      - icon: 'mdi:brightness-4'
+                        name: Relax
+                        service: scene.turn_on
+                        service_data:
+                          entity_id: '[[scene-relax]]'
+                    borderRadius: 20px
+                    brightnessHeight: 250px
+                    brightnessWidth: 100px
+                    sliderHeight: 250px
+                    sliderWidth: 100px
+                    entity: '[[entity-1]]'
+                    fullscreen: false
+                    icon: true
+                    sliderService: cover.set_cover_position
+                    sliderColor: '#a18568'
+                    sliderTrackColor: 'rgba(25, 25, 25, 0.9)'
+                    style: >
+                      #popup > div.action-holder > div > div {
+                        margin: 1em 1em 1em 1em;
+                        font-family: 'San Francisco';
+                        font-weight: 700;
+                        font-size: 0.9em;
+                        color: #fff;
+                      } 
+                      div > div > h4 {
+                        color: rgba(255, 255, 255, 1);
+                        margin-top: -65px;
+                        margin-bottom: 20px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        font-family: 'San Francisco';
+                        letter-spacing: 0.04em;
+                      }  
+                      #popup {
+                        margin: 0 0 0.8em 0;
+                      } 
+                      #popup > div.range-holder > input[type=range]::-webkit-slider-thumb {
+                        border: 100%
+                        height: 100%
+                        width: 10px;
+                        cursor: pointer;
+                      }                                
+                    type: 'custom:cover-popup-card'
+                show_header_toggle: false
+                type: entities
+            type: vertical-stack
+          deviceID: this
+          style:
+            '--ha-card-background': transparent
+            '--ha-card-border-radius': transparent
+            '--iron-icon-fill-color': '#ffffff'
+            background: 'rgba(0, 0, 0, 0.95)'
+            border-radius: 20px
+            font-family: San Francisco !important;
+            font-weight: 700 !important;
+            width: 400px;
+            margin: 0 auto;
+          title: ' '
+
+

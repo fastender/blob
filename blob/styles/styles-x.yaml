@@ -1,0 +1,52 @@
+        card:
+          - width: 110px
+          - height: 110px
+          - letter-spacing: 0.1em;
+          - font-family: San Francisco
+          - text-rendering: optimizeLegibility
+          - font-weight: 700
+          - color: 'rgba(255, 255, 255, 0.3)'
+          - font-size: 12px
+          - background-color: 'rgba(115, 115, 115, 0.2)'
+          - border-radius: 15px
+          - box-shadow: none
+          - transition: none
+        custom_fields:
+          icon_hue:
+            - top: 10%
+            - left: 4.5%
+            - width: 40px
+            - position: absolute
+          info:
+            - top: 10px
+            - left: 65px
+            - width: 40px
+            - position: absolute
+            - letter-spacing: 0.03vw
+        extra_styles: >
+          [[[ var radius = 20.5; 
+
+          var circumference = radius * 2 * Math.PI; 
+
+          var brightness = Math.round( entity.attributes.brightness / 2.54 );
+
+          return "#c_brightness { transform: rotate(-90deg); transform-origin:
+          50% 50%; stroke-dasharray: " + circumference + "; stroke-dashoffset: "
+          + (circumference - brightness / 100 * circumference) + ";}"; ]]] 
+        grid:
+          - grid-template-areas: '"i" "n" "s"'
+          - grid-template-columns: 1fr
+          - grid-template-rows: 1fr min-content min-content
+        img_cell:
+          - align-self: start
+          - text-align: start
+        name:
+          - justify-self: start
+          - padding-left: 10px
+          - font-weight: bold
+          - padding-bottom: 0px
+          - margin-bottom: '-2px'
+        state:
+          - justify-self: start
+          - padding-left: 10px
+          - padding-bottom: 5px

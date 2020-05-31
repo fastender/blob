@@ -1,0 +1,24 @@
+        action: call-service
+        service: browser_mod.popup
+        service_data:
+          card:
+            cards:
+              - entities:
+                  - entity: light.arbeitszimmer
+                    name: dssdsd
+                    toggle: true
+                    type: 'custom:slider-entity-row'
+                show_header_toggle: false
+                type: entities
+            type: vertical-stack
+          deviceID: this
+          style:
+            '--ha-card-background': transparent
+            '--ha-card-border-radius': transparent
+            '--iron-icon-fill-color': '#ffffff'
+            background: 'rgba(0, 0, 0, 0.95)'
+            border-radius: 20px
+            box-shadow: unset !important;
+            font-family: San Francisco !important;
+            font-weight: 700 !important;
+          title: ' '

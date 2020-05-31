@@ -1,0 +1,21 @@
+
+#        info: >
+#          [[[ var brightness = [[circle-1]] * [[circle-2]]; if
+#          (entity.state === '[[circle-3]]')  return '<svg viewBox="0 0 50 50"><circle
+#          id="c_brightness" cx="25" cy="25" r="20.5" stroke="#b2b2b2"
+#          stroke-width="1.5" fill="none" /><text x="52%" y="52%" fill="#8d8e90"
+#          font-size="14" font-family="San Francisco" text-anchor="middle"
+#          alignment-baseline="middle">' + brightness + '<tspan 
+#          style="font-size:10px; font-family: San Francisco; font-weight:700;
+#          letter-spacing: 0.1em;">%</tspan></text></svg>'; ]]]
+
+        info: >
+          [[[ if (entity.state === '[[circle-3]]' && [[circle-1]]) {
+          const [[circle-4]] = Math.round([[circle-1]] / [[circle-2]]);
+          const radius = 20.5; const circumference = radius * 2 * Math.PI; 
+          return `<svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="${radius}" stroke="#b2b2b2" stroke-width="1.5" fill="none" style="
+          transform: rotate(-90deg); transform-origin: 50% 50%; stroke-dasharray: ${circumference}; stroke-dashoffset: ${circumference - [[circle-4]] / 100 * circumference};" />
+          <text x="50%" y="53%" fill="#8d8e90" font-size="14" text-anchor="middle" alignment-baseline="middle">${[[circle-4]]}%</text></svg>`; } ]]]
+
+        icon_shade: >
+          <svg viewBox="0 0 50 50"><path d="M26.4 25.6c.6-.3 1.1-.7 1.1-1.3L25 17.9l-2.5 6.4c0 .7.6 1.1 1.1 1.3v20.8h-5.5v2.7h13.7v-2.7h-5.5V25.6z" fill="#9da0a2"/><path d="M24.6.9l-9.4.5c-.6.1-1.9 0-2.5 2.1s-2.4 9.1-4 16.9c-.2.7-.5 2-.5 2.3s-.4 1.6.9 1.6c.8.1 7.4.3 15.9.3 8.6 0 15.1-.3 15.9-.3 1.3-.1.9-1.3.9-1.6s-.3-1.6-.5-2.3c-1.6-7.8-3.4-14.8-4-16.9s-1.9-2-2.5-2.1c-1.6-.2-6.9-.4-9.4-.5" fill="var(--button-card-light-color-no-temperature)"/></svg>

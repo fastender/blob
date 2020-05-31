@@ -1,0 +1,347 @@
+        action: call-service
+        service: browser_mod.popup
+        service_data:
+          card:
+            cards:
+              - type: custom:layout-card
+                layout: vertical
+                column_width: 24%
+                cards:
+                  - template: es-icon
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: '[[template]]'
+                      - entity-1: '[[entity-1]]'
+                      - name-1: '[[name-1]]'
+                      - state-1: 'open'
+                      - state-2: 'closed'
+                      - circle-1: entity.attributes.current_position
+                      - circle-2: 1
+                      - circle-3: 'open'
+                      - circle-4: current_position
+                      - scene-hell: '[[scene-hell]]'
+                      - scene-relax: '[[scene-relax]]'
+              - '--mmp-info-opacity': 1;
+                artwork: cover
+                entity: '[[entity-1]]'
+                group: true
+                hide:
+                  controls: true
+                  icon: true
+                  info: true
+                  mute: true
+                  name: true
+                  play_pause: true
+                  play_stop: true
+                  power: true
+                  source: true
+                  volume: true
+                info: short
+                style: >
+                  ha-card {
+                    height: 150px;
+                    width: 130px !important;
+                    margin: 0 auto;
+                    border-radius: 20px;
+                    box-shadow: unset;
+                    width: 95%;
+                    margin: 0 auto;
+                    font-family: San Francisco;
+                    margin-bottom: 0px !important; 
+                    opacity: 1;
+                  }
+                  ha-card::before {
+                    opacity: 1;
+                  } 
+                  #progressContainer {
+                    witdh: 50px !important;
+                  } 
+                  div > div > mmp__bg {
+                    border-radius: 0px !important;
+                  } 
+                  .mmp__bg {
+                    border-radius: 0px !important;
+                    margin-bottom: 20px !important;
+                    opacity: 1 !important;
+                  } 
+                  .cover {
+                    border-radius: 5px !important;
+                    opacity: 1 !important;
+                    animation: unset !important;
+                    transition: unset !important;
+                  } 
+                  .cover::before {
+                    opacity: 1 !important;
+                  } 
+                  ha-card.--has-artwork .cover,
+                  ha-card.--has-artwork[artwork="cover"] .cover::before,
+                  ha-card.--bg .cover {
+                    opacity: 1 !important;
+                  } 
+                  .entity__info__media {
+                    font-family: San Francisco !important;
+                  } 
+                  .entity__info__name {
+                    font-family: San Francisco !important;
+                  }
+                type: 'custom:mini-media-player'
+                
+              - entity: '[[entity-1]]'
+                group: true
+                hide:
+                  controls: true
+                  icon: true
+                  mute: true
+                  name: true
+                  play_pause: true
+                  play_stop: true
+                  power: true
+                  progress: true
+                  source: true
+                  volume: true
+                info: short
+                source: icon
+                style: |
+                  ha-card {
+                    height: 50px;
+                    width: 300px !important;
+                    margin: 0 auto !important;
+                    border-radius: 20px;
+                    box-shadow: unset;
+                    width: 95%;
+                    margin: 0 auto;
+                    font-family: San Francisco;
+                    margin-bottom: 0px !important;                                    
+                  }
+                  .entity__info {
+                    font-family: San Francisco !important;
+                    color: #fff !important;
+                    width: 95% !important;
+                    position: absolute !important;
+                    margin-top: -45px !important;
+                    font-weight: 700;
+                  }
+                  .attr__media_title {
+                    color: #fff !important;
+                    font-size: 12px;
+                  }
+                  .attr__media_artist {
+                    color: #bdbdbd !important;
+                    font-size: 10px;
+                    margin-top: -3px;
+                  }
+                  .entity__info__media span::before {
+                    content: " " !important;
+                  }
+                  .entity__info__media {
+                    font-family: San Francisco !important;
+                    color: #fff !important;
+                    text-align: center !important;
+                    display: contents !important;
+                  }
+                  .entity__info__name {
+                    font-family: San Francisco !important;
+                    color: #fff !important;
+                    text-align: center !important;
+                  }
+                type: 'custom:mini-media-player' 
+              - entities:
+                  - actionSize: 50px
+                    actions:
+                      - icon: 'mdi:cogs'
+                        name: Einstellungen
+                        service: browser_mod.popup
+                        service_data:
+                          card:
+                            entities:
+                              - artwork: cover
+                                entity: '[[entity-1]]'
+                                group: true
+                                hide:
+                                  controls: true
+                                  icon: true
+                                  info: true
+                                  mute: true
+                                  name: true
+                                  play_pause: true
+                                  play_stop: true
+                                  power: true
+                                  source: true
+                                  volume: true
+                                info: short
+                                style: >
+                                  ha-card {
+                                    height: 170px;
+                                    width: 150px !important;
+                                    margin: 0 auto;
+                                    border-radius: 20px;
+                                    box-shadow: unset;
+                                    width: 95%;
+                                    margin: 0 auto;
+                                    font-family: San Francisco;
+                                    margin-bottom: 0px !important; 
+                                    opacity: 1;
+                                    '--ha-card-border-radius': transparent
+                                  } 
+                                  ha-card::before {
+                                    opacity: 1;
+                                  }
+                                  #progressContainer {
+                                    witdh: 50px !important;
+                                  } 
+                                  div > div > mmp__bg {
+                                    border-radius: 0px !important;
+                                  } 
+                                  .mmp__bg {
+                                    border-radius: 0px !important;
+                                    margin-bottom: 20px !important;
+                                    opacity: 1 !important;
+                                  } 
+                                  .cover {
+                                    border-radius: 5px !important;
+                                    opacity: 1 !important;
+                                  } 
+                                  .cover::before {
+                                    opacity: 1 !important;
+                                  } 
+                                  ha-card.--has-artwork .cover,
+                                  ha-card.--has-artwork[artwork="cover"]
+                                  .cover::before, ha-card.--bg .cover {
+                                    opacity: 1 !important;
+                                  } 
+                                  .entity__info__media {
+                                    font-family: San Francisco !important;
+                                  } 
+                                  .entity__info__name {
+                                    font-family: San Francisco !important;
+                                  }
+                                type: 'custom:mini-media-player'
+                              - entity: '[[playlist-1]]'
+                                name: '[[playlist-name-1]]'
+                            show_header_toggle: false
+                            type: entities
+                          deviceID: this
+                          style:
+                            '--ha-card-background': transparent
+                            '--ha-card-border-radius': transparent !important
+                            '--iron-icon-fill-color': '#fff'
+                            '--ha-card-box-shadow': 0px 5px '#000'
+                            box-shadow: 0px 11px '#000'
+                            background: 'rgba(0, 0, 0, 0.95)'
+                            border-radius: 20px
+                            font-family: San Francisco !important
+                            font-weight: 700
+                            opacity: 1
+                          title: ' '
+                      - icon: 'mdi:speaker-wireless'
+                        name: Einzeln
+                        service: media_player.media_previous_track
+                        service_data:
+                          entity_id: this
+                      - icon: 'mdi:speaker-multiple'
+                        name: Gruppieren
+                        service: media_player.media_play_pause
+                        service_data:
+                          entity_id: this
+                      - icon: 'mdi:skip-previous'
+                        name: Zurück
+                        service: media_player.media_previous_track
+                        service_data:
+                          entity_id: this
+                      - icon: 'mdi:play-pause'
+                        name: Play/Pause
+                        service: media_player.media_play_pause
+                        service_data:
+                          entity_id: this
+                      - icon: 'mdi:skip-next'
+                        name: Weiter
+                        service: media_player.media_next_track
+                        service_data:
+                          entity_id: this
+                    actionsInARow: 3
+                    borderRadius: 20px
+                    brightnessHeight: 200px
+                    brightnessWidth: 10px
+                    entity: '[[entity-1]]'
+                    fullscreen: false
+                    icon: true
+                    sliderColor: '#ec543f'
+                    sliderHeight: 200px
+                    sliderWidth: 10px
+                    sliderTrackColor: 'rgba(25, 25, 25, 0.9)'
+                    style: |
+                      ha-card {
+                        --ha-card-box-shadow: none !important;
+                        --ha-card-box-shadow: unset !important;
+                        box-shadow: 0px 5px rgba(0,0,0,1) !important;
+                        border-radius: 1em;
+                        background: rgba(0, 0, 0, 0.9);
+                        padding: 20px;
+                        font-family: 'San Francisco';
+                        font-weight: 700;
+                      }
+                      .card-header {
+                        margin-left: 0.4em;
+                        margin-bottom: 0.1em;
+                        font-family: 'San Francisco';
+                        letter-spacing: 0.005em;
+                        font-weight: 700;
+                      }
+                    
+                      #popup > div.action-holder > div > div {
+                        margin: 0em 1em 1em 1em;
+                        font-family: 'San Francisco';
+                        font-weight: 700;
+                        font-size: 0.9em;
+                        color: #fff;
+                      }
+                      div > div > h4 {
+                        color: rgba(255, 255, 255, 1);
+                        margin: -1.8em 0 0.7em 0;
+                        font-size: 1.9em;
+                        font-weight: 700;
+                        font-family: 'San Francisco';
+                        letter-spacing: 0.04em;
+                        margin-top: -20px !important;
+                      }  
+                      .action-row {
+                        padding-bottom: 0px !important;
+                      }
+                      .range-holder input[type="range"] {
+                        transform: rotate(360deg) !important;
+                        margin-top: -160px !important;
+                        --slider-thumb-color: #ec543f !important;
+                      }
+                      .action-holder {
+                        margin-top: -195px !important;
+                      }
+                      #states {
+                        box-shadow: transparent !important;
+                      } 
+                      #popup {
+                        margin: 0 0 0.8em 0;
+                      } 
+                      #popup > div.range-holder >
+                      input[type=range]::-webkit-slider-thumb {
+                        border: 100%
+                        height: 100%
+                        width: 10px;
+                        cursor: pointer;
+                      }
+                      --ha-card-border-radius: transparent
+                    type: 'custom:media_player-popup-card'
+                show_header_toggle: false
+                type: entities
+            type: 'custom:stack-in-card'
+            mode: vertical
+          deviceID: this
+          style:
+            '--ha-card-background': transparent
+            '--ha-card-border-radius': transparent
+            '--iron-icon-fill-color': '#fff'
+            background: 'rgba(0, 0, 0, 0.95)'
+            border-radius: 20px
+            box-shadow: 0px 5px rgba(0,0,0,1) !important;
+            font-family: San Francisco !important;
+            font-weight: 700 !important;
+          title: ' '

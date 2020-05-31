@@ -1,0 +1,231 @@
+        action: call-service
+        service: browser_mod.popup
+        service_data:
+          card:
+            cards:
+  
+              - type: custom:layout-card
+                layout: vertical
+                column_width: 24%
+                cards:
+                  - template: es-icon
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: '[[template]]'
+                      - entity-1: '[[entity-1]]'
+                      - name-1: '[[name-1]]'
+                      - state-1: 'cleaning'
+                      - state-2: 'cleaning'
+
+              - type: custom:hui-vertical-stack-card
+                cards:
+                - style: 'ha-card { width: 10px; }'
+                  template: device
+                  type: 'custom:decluttering-card'
+                  variables:
+                    - content: '[[name-1]]'
+                    
+              - entities:
+                  - actionSize: 50px
+                    actions:
+                      - icon: 'mdi:cogs'
+                        name: Einstellungen
+                        service: browser_mod.popup
+                        service_data:
+                          card:
+                            entities:
+                            
+                              - type: custom:layout-card
+                                layout: vertical
+                                column_width: 24%
+                                cards:
+                                  - template: es-icon
+                                    type: 'custom:decluttering-card'
+                                    variables:
+                                      - template: '[[template]]'
+                                      - entity-1: '[[entity-1]]'
+                                      - name-1: '[[name-1]]'
+                                      - state-1: 'open'
+                                      - state-2: 'closed'
+                                      - circle-1: entity.attributes.current_position
+                                      - circle-2: 1
+                                      - circle-3: 'open'
+                                      - circle-4: current_position
+                                      - scene-hell: '[[scene-hell]]'
+                                      - scene-relax: '[[scene-relax]]'                          
+                                    
+                              - type: custom:hui-vertical-stack-card
+                                style: |
+                                  #root { justify-content: space-evenly; margin: 0 0 0 0; text-align: center; margin-bottom: 40px;}
+                                cards:
+                                - style: 'ha-card { width: 10px; }'
+                                  template: device
+                                  type: 'custom:decluttering-card'
+                                  variables:
+                                    - content: '[[name-1]]'
+                            
+                              - type: custom:hui-horizontal-stack-card
+                                style: |
+                                  #root { justify-content: space-evenly; width: 340px; margin: 0 auto; background-color: #222; border-radius: 10px;}
+                                cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_boolean.sonos_kinderzimmer_lautstaerke_erhoehen
+                                    - entity: input_boolean.sonos_kinderzimmer_lautstaerke_verringern
+                                    - entity: input_boolean.sonos_kinderzimmer_musik
+                                  show_header_toggle: false
+                                  style: |
+                                    ha-card {
+                                      color: #fff;
+                                    }
+
+                            show_header_toggle: false
+                            type: entities
+                            
+                          deviceID: this
+                          style:
+                            '--ha-card-background': transparent
+                            '--ha-card-border-radius': 0 0 1em 1em
+                            '--iron-icon-fill-color': '#ffffff'
+                            background: 'rgba(0, 0, 0, 0.95)'
+                            border-radius: 1em
+                            font-family: San Francisco !important
+                            font-weight: 700
+                            opacity: 0.9
+                          title: ' '                         
+                                    
+                          
+                          
+                          
+                          
+                    actionsInARow: 1
+                    borderRadius: 20px
+                    brightnessHeight: 250px
+                    brightnessWidth: 100px
+                    entity: light.arbeitszimmer
+                    fullscreen: false
+                    icon: true
+                    sliderColor: '#f8cd41'
+                    sliderTrackColor: 'rgba(25, 25, 25, 0.9)'
+                    style: >
+                      #popup > div.action-holder > div > div {
+                        margin: 1em 1em 1em 1em;
+                        font-family: 'San Francisco';
+                        font-weight: 700;
+                        font-size: 0.9em;
+                        margin-top: -100px;
+                        margin-bottom: 25px;
+                        color: #fff;
+                      } 
+                      #brightnessValue {
+                        display: none !important;
+                      } 
+                      #popup {
+                        margin: 0 0 0.8em 0;
+                      } 
+                      #popup > div.range-holder {
+                        display: none !important;
+                      }   
+                         
+                    type: 'custom:light-popup-card'
+                show_header_toggle: false
+                type: entities
+
+              - entities:
+
+                  - type: custom:hui-vertical-stack-card
+                    cards:
+
+                    - type: history-graph
+                      entities:
+                        - binary_sensor.outdoor_bewegungsmelder_1
+                      hours_to_show: 24
+                      refresh_interval: 0
+                      title: Bewegung
+                      style: |
+                        ha-card {
+                          max-width: 440px;
+                          margin: 0 auto !important;
+                          margin-top: 40px !important;
+                          font-family: San Francisco;
+                          font-weight: 700;
+                          border-radius: 10px;
+                          background-color: #222;
+                        }
+                        ha-card > div.card-header {
+                          color: #fff;
+                        }
+                        
+                    - type: history-graph
+                      entities:
+                        - binary_sensor.fenster_turkontaktsensor_1
+                      hours_to_show: 24
+                      refresh_interval: 0
+                      title: Haustür
+                      style: |
+                        ha-card {
+                          max-width: 440px;
+                          margin: 0 auto !important;
+                          margin-top: 0px !important;
+                          font-family: San Francisco;
+                          font-weight: 700;
+                          border-radius: 10px;
+                          background-color: #222;
+                        }
+                        ha-card > div.card-header {
+                          color: #fff;
+                        }
+
+                 
+
+                  - template: mini-graph
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - entity: sensor.outdoor_bewegungsmelder_1
+                      - color: grey
+                      
+                  - template: mini-graph
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - entity: sensor.outdoor_bewegungsmelder_1_2
+                      - color: grey
+
+
+                      
+
+                show_header_toggle: false
+                type: entities
+                
+                style: |
+                  ha-card {
+                    box-shadow: none;
+                    border-radius: 1em;
+                    background: rgba(0, 0, 0, 0.9);
+                    padding: 0px;
+                    font-family: 'San Francisco';
+                    font-weight: 700;
+                    color: white;
+                  }
+                  .card-header {
+                    margin-left: 0.4em;
+                    margin-bottom: 0.1em;
+                    font-family: 'San Francisco';
+                    letter-spacing: 0.005em;
+                    font-weight: 700;
+                    margin-top: -100px;
+                  }
+                title: ' ' 
+                
+                
+            type: custom:hui-vertical-stack-card
+          deviceID: this
+          style:
+            '--ha-card-background': transparent
+            '--ha-card-border-radius': transparent
+            '--iron-icon-fill-color': '#ffffff'
+            background: 'rgba(0, 0, 0, 0.95)'
+            border-radius: 20px
+            font-family: San Francisco !important;
+            font-weight: 700 !important;
+            width: 400px;
+          title: ' '

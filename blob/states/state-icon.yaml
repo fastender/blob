@@ -1,0 +1,18 @@
+        - styles:
+            card:
+              - background-color: 'transparent'
+              - '--button-card-light-color-no-temperature': '#transparent'
+              - overflow: hidden
+            name:
+              - color: 'transparent'
+            state:
+              - color: 'transparent'
+          value: '[[state-1]]'
+        - styles:
+            card:
+              - background-color: 'transparent'
+            name:
+              - color: 'transparent'
+            state:
+              - color: 'transparent'
+          value: '[[state-2]]'

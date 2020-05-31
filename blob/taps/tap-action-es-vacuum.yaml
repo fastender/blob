@@ -1,0 +1,279 @@
+        action: call-service
+        service: browser_mod.popup
+        service_data:
+          card:
+            cards:
+            
+              - type: custom:layout-card
+                layout: vertical
+                column_width: 24%
+                cards:
+                  - template: es-icon
+                    type: 'custom:decluttering-card'
+                    variables:
+                      - template: '[[template]]'
+                      - entity-1: '[[entity-1]]'
+                      - name-1: '[[name-1]]'
+                      - state-1: 'cleaning'
+                      - state-2: 'cleaning'
+                      - circle-1: entity.attributes.current_position
+                      - circle-2: 1
+                      - circle-3: 'open'
+                      - circle-4: current_position
+                      - scene-hell: '[[scene-hell]]'
+                      - scene-relax: '[[scene-relax]]'
+                      
+              - type: custom:hui-vertical-stack-card
+                cards:
+                - style: 'ha-card { width: 10px; }'
+                  template: device
+                  type: 'custom:decluttering-card'
+                  variables:
+                    - content: '[[name-1]]'
+                    
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 13px;
+                    color: #fff;
+                    text-rendering: optimizeLegibility;
+                    text-align: center;
+                    position: static;
+                    margin-top: -20px;
+                    margin-bottom: -25px;
+                  }
+                content: >
+                  <span style="text-align: center">
+                  {% if is_state('sensor.vacuum_status', 'Status: Cleaning') %}
+                  Staubi reinigt.{% endif %}
+                  {% if is_state('sensor.vacuum_status', 'Status: Paused') %}
+                  Staubi ist pausiert{% endif %}
+                  {% if is_state('sensor.vacuum_status', 'Status: Returning home') %}
+                  Staubi fährt zurück.{% endif %}
+                  {% if is_state('sensor.vacuum_status', 'Status: Charging') %}
+                  Staubi ist angedockt.{% endif %}
+                  {% if is_state('sensor.vacuum_status', 'Status: Charger disconnected') %}
+                  Staubi ist im Standby.{% endif %}
+                  </span>
+              
+
+              - entities:
+                  - actionSize: 50px
+                    actions:
+                      - icon: 'mdi:play-pause'
+                        name: Start/Pause
+                        service: >
+                          [[[ if (states['[[entity-1]]'].state ===
+                          'docked' ||  states['[[entity-1]]'].state ===
+                          'paused')  return 'vacuum.start'; else return
+                          'vacuum.pause'; ]]]
+                        service_data:
+                          entity_id: '[[entity-1]]'
+
+                      - icon: 'mdi:map-marker-question'
+                        name: Lokalisieren
+                        service: vacuum.locate
+                        service_data:
+                          entity_id: '[[entity-1]]'
+
+                      - icon: 'mdi:home-map-marker'
+                        name: Beenden
+                        service: vacuum.return_to_base
+                        service_data:
+                          entity_id: '[[entity-1]]'
+                          
+                          
+                          
+                    actionsInARow: 3
+                    borderRadius: 20px
+                    brightnessHeight: 250px
+                    brightnessWidth: 100px
+                    entity: '[[entity-1]]'
+                    fullscreen: false
+                    icon: true
+                    sliderColor: '#f8cd41'
+                    sliderTrackColor: 'rgba(25, 25, 25, 0.9)'
+                    style: >
+                      #popup > div.action-holder > div > div {
+                        margin: 1em 1em 1em 1em;
+                        font-family: 'San Francisco';
+                        font-weight: 700;
+                        font-size: 0.9em;
+                        color: #fff;
+                      } 
+                      #brightnessValue {
+                        display: none !important;
+                      } 
+                      #popup {
+                        margin: 0 0 0.8em 0;
+                      } 
+                      #popup > div.range-holder {
+                        display: none !important;
+                      }   
+                         
+                    type: 'custom:light-popup-card'
+                show_header_toggle: false
+                type: entities
+
+                style: |
+                  ha-card {
+                    box-shadow: none;
+                    border-radius: 1em;
+                    background: rgba(0, 0, 0, 0.9);
+                    padding: 20px;
+                    font-family: 'San Francisco';
+                    font-weight: 700;
+                    color: white;
+                  }
+                  .card-header {
+                    margin-left: 0.4em;
+                    margin-bottom: 0.1em;
+                    font-family: 'San Francisco';
+                    letter-spacing: 0.005em;
+                    font-weight: 700;
+                    margin-top: -100px;
+                  }
+                title: ' ' 
+                
+                
+              - entities:
+            
+                  - entity: sensor.vacuum_battery
+                    style: |
+                      ha-card {
+                        box-shadow: none;
+                        border-radius: 1em;
+                        background: rgba(0, 0, 0, 0.9);
+                        padding: 20px;
+                        font-family: 'San Francisco';
+                        font-weight: 700;
+                        color: white;
+                      }
+                  - entity: sensor.vacuum_cleansidebrush
+                  - entity: sensor.vacuum_cleanfilter
+                  - decimal: 0
+                    entities:
+                      - entity: sensor.vacuum_cleaned_area
+                        icon: 'mdi:filter-variant'
+                        name: Filter
+                        tap_action:
+                          action: call-service
+                          service: homeassistant.update_entity
+                          service_data:
+                            entity_id: sensor.vacuum_cleaned_area
+                      - entity: sensor.vacuum_cleaning_time
+                        icon: 'mdi:broom'
+                        name: Huvudborste
+                        tap_action:
+                          action: call-service
+                          service: homeassistant.update_entity
+                          service_data:
+                            entity_id: sensor.vacuum_cleaning_time
+                      - entity: sensor.vacuum_cleaned_area
+                        icon: 'mdi:tools'
+                        name: Sidoborste
+                        tap_action:
+                          action: call-service
+                          service: homeassistant.update_entity
+                          service_data:
+                            entity_id: sensor.vacuum_cleaned_area
+                      - entity: sensor.vacuum_cleanmainbrush
+                        icon: 'mdi:spray-bottle'
+                        name: Sensorer
+                        tap_action:
+                          action: call-service
+                          service: homeassistant.update_entity
+                          service_data:
+                            entity_id: sensor.vacuum_cleanmainbrush
+                    entity_row: true
+                    height: 2em
+                    positions:
+                      icon: outside
+                      indicator: 'off'
+                      name: outside
+                    severity:
+                      - color: '#303435'
+                        from: 11
+                        to: 100
+                      - color: '#6d2525'
+                        from: 0
+                        to: 10
+
+                    style: |
+                    
+                      bar-card-iconbar {
+                        padding-left: 0.23em;
+                      }
+                      bar-card-name {
+                        padding-left: 0.25em;
+                      }
+                      bar-card-value {
+                        margin-right: auto;
+                        color: #fff;
+                        text-shadow: none;
+                        font-size: 1em;
+                        font-weight: 700;
+                        font-family: 'San Francisco';
+                      }
+                      bar-card-background {
+                        background: grey;
+                        box-shadow: inset 0 0 25px #00000045;
+                        border-radius: 0.3em;
+                      }
+                    
+                      bar-card-currentbar {
+                        background: linear-gradient( to var(--bar-direction), var(--bar-color) var(--bar-percent), #0000 var(--bar-percent), #0000 var(--bar-percent) );
+                        border-radius: 0.3em;
+                      }
+                      bar-card-backgroundbar {
+                        background: none;
+                      }
+                    type: 'custom:bar-card'
+                    unit_of_measurement: '%'
+                    width: 55%
+                show_header_toggle: false
+                type: entities
+
+                
+                style: |
+                  ha-card {
+                    box-shadow: none;
+                    border-radius: 1em;
+                    background: rgba(0, 0, 0, 0.9);
+                    padding: 40px 10px 10px 0px;
+                    font-family: 'San Francisco';
+                    font-weight: 700;
+                    color: white;
+                    
+                    
+
+                    margin: 10px;
+                  }
+                  .card-header {
+                    margin-left: 0.4em;
+                    margin-bottom: 0.1em;
+                    font-family: 'San Francisco';
+                    letter-spacing: 0.005em;
+                    font-weight: 700;
+                    margin-top: -100px;
+                  }
+                title: ' ' 
+                
+                
+            type: custom:hui-vertical-stack-card
+          deviceID: this
+          style:
+            '--ha-card-background': transparent
+            '--ha-card-border-radius': transparent
+            '--iron-icon-fill-color': '#ffffff'
+            background: 'rgba(0, 0, 0, 0.95)'
+            border-radius: 20px
+            font-family: San Francisco !important;
+            font-weight: 700 !important;
+            width: 400px;
+          title: ' '

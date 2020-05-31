@@ -1,0 +1,53 @@
+      icon_hue: >
+        [[[ if (entity.state === 'on') return '<svg id="ei4pmb0leo1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><style><![CDATA[#ei4pmb0leo3_to {animation: ei4pmb0leo3_to__to 1000ms linear 1 normal forwards}@keyframes ei4pmb0leo3_to__to { 0% {transform: translate(0px,1.500000px)} 100% {transform: translate(0px,0px)} }#ei4pmb0leo3 {animation: ei4pmb0leo3_c_o 1000ms linear 1 normal forwards}@keyframes ei4pmb0leo3_c_o { 0% {opacity: 1} 100% {opacity: 0} }]]></style><path id="ei4pmb0leo2" d="M5.493000,4.539000C5.493000,4.265000,5.716000,4.040000,5.992000,4.040000L11.974000,4.040000C12.250000,4.040000,12.473000,4.265000,12.473000,4.539000L12.473000,5.637000C11.711000,5.728000,10.988000,6.023000,10.479000,6.534000L10.479000,8.029000L15.465000,8.029000L15.465000,6.534000C14.956000,6.023000,14.231000,5.728000,13.471000,5.637000L13.471000,4.539000C13.471000,3.715000,12.798000,3.044000,11.974000,3.044000L5.992000,3.044000C5.166000,3.044000,4.495000,3.715000,4.495000,4.539000L4.495000,19.498000L3,19.498000L3,20.993000L20.949000,20.993000L20.949000,19.498000L5.493000,19.498000L5.493000,4.539000Z" fill="rgb(246,152,54)" stroke="none" stroke-width="1"/><g id="ei4pmb0leo3_to" transform="translate(0,1.500000)"><g id="ei4pmb0leo3" transform="translate(0,0)"><rect id="ei4pmb0leo4" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 9.02600002288818)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo5" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 17.00399971008301)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo6" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 17.00399971008301)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo7" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 17.00399971008301)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo8" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 15.01000022888184)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo9" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 15.01000022888184)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo10" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 15.01000022888184)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo11" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 13.01500034332275)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo12" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 13.01500034332275)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo13" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 13.01500034332275)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo14" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 11.02200031280518)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo15" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 11.02200031280518)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo16" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 11.02200031280518)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo17" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 9.02600002288818)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo18" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 9.02600002288818)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/></g></g></svg> '
+
+        ;   else return '<svg id="ei4pmb0leo1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><style><![CDATA[#ei4pmb0leo3_to {animation: ei4pmb0leo3_to__to 1000ms linear 1 normal forwards}@keyframes ei4pmb0leo3_to__to { 0% {transform: translate(0px,1.500000px)} 100% {transform: translate(0px,0px)} }#ei4pmb0leo3 {animation: ei4pmb0leo3_c_o 1000ms linear 1 normal forwards}@keyframes ei4pmb0leo3_c_o { 0% {opacity: 1} 100% {opacity: 0} }]]></style><path id="ei4pmb0leo2" d="M5.493000,4.539000C5.493000,4.265000,5.716000,4.040000,5.992000,4.040000L11.974000,4.040000C12.250000,4.040000,12.473000,4.265000,12.473000,4.539000L12.473000,5.637000C11.711000,5.728000,10.988000,6.023000,10.479000,6.534000L10.479000,8.029000L15.465000,8.029000L15.465000,6.534000C14.956000,6.023000,14.231000,5.728000,13.471000,5.637000L13.471000,4.539000C13.471000,3.715000,12.798000,3.044000,11.974000,3.044000L5.992000,3.044000C5.166000,3.044000,4.495000,3.715000,4.495000,4.539000L4.495000,19.498000L3,19.498000L3,20.993000L20.949000,20.993000L20.949000,19.498000L5.493000,19.498000L5.493000,4.539000Z" fill="rgb(246,152,54)" stroke="none" stroke-width="1"/><g id="ei4pmb0leo3_to" transform="translate(0,1.500000)"><g id="ei4pmb0leo3" transform="translate(0,0)"><rect id="ei4pmb0leo4" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 9.02600002288818)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo5" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 17.00399971008301)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo6" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 17.00399971008301)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo7" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 17.00399971008301)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo8" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 15.01000022888184)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo9" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 15.01000022888184)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo10" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 15.01000022888184)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo11" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 13.01500034332275)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo12" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 13.01500034332275)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo13" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 13.01500034332275)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo14" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 12.47299957275391 11.02200031280518)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo15" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 11.02200031280518)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo16" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 11.02200031280518)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo17" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 10.47900009155273 9.02600002288818)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><rect id="ei4pmb0leo18" width="0.997000" height="0.997000" rx="0" ry="0" transform="matrix(1 0 0 1 14.46800041198730 9.02600002288818)" fill="rgb(87,168,215)" stroke="none" stroke-width="1"/></g></g></svg>'; ]]]
+        
+      temp: >
+        [[[
+          return `<ha-icon
+            icon="mdi:thermometer"
+            style="width: 14px; height: 14px; color: '#c177df';">
+            </ha-icon><span>${entity.state}°C</span>`
+        ]]]
+    
+      sd1: >
+        [[[
+          return `<ha-icon
+            icon="mdi:air-filter"
+            style="width: 9px; height: 9px; color: '#57a8d7';">
+            </ha-icon><span> <span style="color: var(--text-color-sensor);">${states['sensor.multisensor_2_2'].state} %</span></span>`
+        ]]]
+        
+      sd2: >
+        [[[
+          return `<ha-icon
+            icon="mdi:gauge"
+            style="width: 9px; height: 9px; color: '#8fce89';">
+            </ha-icon><span> <span style="color: var(--text-color-sensor);">${states['sensor.multisensor_2_3'].state} HPa</span></span>`
+        ]]]
+    
+      sd3: >
+        [[[
+          return `<ha-icon
+            icon="mdi:motion-sensor"
+            style="width: 9px; height: 9px; color: '#8fce89';">
+            </ha-icon><span> <span style="color: var(--text-color-sensor);">${states['sensor.status_bewegungsmelder_4'].state}</span></span>`
+        ]]]
+    
+      sd4: >
+        [[[
+          return `<ha-icon
+            icon="mdi:eye"
+            style="width: 9px; height: 9px; color: '#8fce89';">
+            </ha-icon><span> <span style="color: var(--text-color-sensor);">${states['sensor.bewegungsmelder_4'].state} Lux</span></span>`
+        ]]]
+    
+      sd5: >
+        [[[
+          return `<ha-icon
+            icon="mdi:vibrate"
+            style="width: 9px; height: 9px; color: '#8fce89';">
+            </ha-icon><span> <span style="color: var(--text-color-sensor);">${states['sensor.status_vibration_3'].state}</span></span>`
+        ]]]
+    

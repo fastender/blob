@@ -1,0 +1,9 @@
+        info: >
+          [[[ var brightness = entity.attributes.volume_level * 100; if
+          (entity.state === 'playing')  return '<svg viewBox="0 0 50 50"><circle
+          id="c_brightness" cx="25" cy="25" r="20.5" stroke="#b2b2b2"
+          stroke-width="1.5" fill="none" /><text x="52%" y="52%" fill="#8d8e90"
+          font-size="14" font-family="San Francisco" text-anchor="middle"
+          alignment-baseline="middle">' + brightness + '<tspan 
+          style="font-size:10px; font-family: San Francisco; font-weight:700;
+          letter-spacing: 0.1em;">%</tspan></text></svg>'; ]]]  

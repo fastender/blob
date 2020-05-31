@@ -1,0 +1,71 @@
+        card:
+          - width: 165px
+          - height: 110px
+          - font-family: San Francisco
+          - background-color: '#000044'
+          - text-rendering: optimizeLegibility
+          - font-weight: 700
+          - color: '#666'
+          - font-size: 8px
+          - background-color: 'rgba(255, 255, 255, 0.9)'
+          - border-radius: 15px
+          - padding: 0px
+          - box-shadow: none
+          - transition: none
+          
+        custom_fields:
+          icon_hue:
+            - top: 10%
+            - left: 4.5%
+            - width: 40px
+            - position: absolute
+            
+          temp:
+            - top: 10px
+            - right: 10px
+            - position: absolute
+            - color: '#f69836'
+            - font-size: 14px
+            
+          sd1:
+            - top: 75px
+            - left: 8px
+            - position: absolute
+            
+          sd2:
+            - top: 90px
+            - left: 8px
+            - position: absolute
+            
+          sd3:
+            - top: 75px
+            - left: 60px
+            - position: absolute
+
+          sd4:
+            - top: 90px
+            - left: 60px
+            - position: absolute
+        
+          sd5:
+            - top: 75px
+            - left: 115px
+            - position: absolute
+
+          sd6:
+            - top: 90px
+            - left: 115px
+            - position: absolute
+            
+        grid:
+          - grid-template-areas: '"i temp" "n n" "sd1 sd1" "sd2 sd2" "sd3 sd3" "sd4 sd4" "sd5 sd5" "sd6 sd6"'
+          - grid-template-columns: 1fr 1fr
+          - grid-template-rows: 1fr min-content min-content min-content min-content
+          
+        name:
+          - font-weight: bold
+          - font-size: 12px
+          - color: '#111'
+          - top: 55px
+          - left: 10px
+          - position: absolute
