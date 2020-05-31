@@ -110,7 +110,13 @@ my design could never be realized. Many thanks!
 
 The [Lovelace YAML-Modus](https://www.home-assistant.io/lovelace/yaml-mode/) is used and the codes are [splitted](https://www.home-assistant.io/docs/configuration/splitting_configuration/) with [!includes](https://www.youtube.com/watch?v=Ili8B4hgQ-g), [Lovelace Decluttering Card](https://github.com/custom-cards/decluttering-card) and [templates](https://github.com/custom-cards/button-card#configuration-templates).
 
+https://raw.githubusercontent.com/fastender/blob/master/logos/blob-1.png
+https://raw.githubusercontent.com/fastender/blob/master/logos/blob-2.png
+https://raw.githubusercontent.com/fastender/blob/master/logos/blob-3.png
+https://raw.githubusercontent.com/fastender/blob/master/logos/blob-4.png
+https://raw.githubusercontent.com/fastender/blob/master/logos/blob-5.png
 
+[Lovelace YAML-Modus](https://raw.githubusercontent.com/fastender/blob/master/logos/blob-video.mp4)
 More coming soon!
 
 <!-- AUTOMATIONS -->
