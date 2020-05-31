@@ -1,0 +1,1995 @@
+
+
+button_card_templates:
+  arbeitszimmer:
+    custom_fields:
+      !include blob/icons/arbeitszimmer.yaml
+
+  badezimmer:
+    custom_fields:
+      !include blob/icons/badezimmer.yaml
+
+  dusche:
+    custom_fields:
+      !include blob/icons/dusche.yaml
+
+  eingang:
+    custom_fields:
+      !include blob/icons/eingang.yaml
+
+  essbereich:
+    custom_fields:
+      !include blob/icons/essbereich.yaml
+
+  flur:
+    custom_fields:
+      !include blob/icons/flur.yaml
+
+  freizeitraum:
+    custom_fields:
+      !include blob/icons/freizeitraum.yaml
+
+  garten:
+    custom_fields:
+      !include blob/icons/garten.yaml
+
+  hauseingang:
+    custom_fields:
+      !include blob/icons/hauseingang.yaml
+
+#  icon_action:
+#      !include popup/icon-action.yaml
+
+  kinderzimmer:
+    custom_fields:
+      !include blob/icons/kinderzimmer.yaml
+
+  obergeschoss:
+    custom_fields:
+      !include blob/icons/obergeschoss.yaml
+
+  schlafzimmer:
+    custom_fields:
+      !include blob/icons/schlafzimmer.yaml
+
+  shutter:
+    custom_fields:
+      !include blob/icons/shutter.yaml
+
+  speaker:
+    custom_fields:
+      !include blob/icons/speaker.yaml
+
+  switch:
+    custom_fields:
+      !include blob/icons/switch.yaml
+
+  tv:
+    custom_fields:
+      !include blob/icons/tv.yaml
+
+  untergeschoss:
+    custom_fields:
+      !include blob/icons/untergeschoss.yaml
+
+  vacuum:
+    custom_fields:
+      !include blob/icons/vacuum.yaml
+
+  wohnzimmer:
+    custom_fields:
+      !include blob/icons/wohnzimmer.yaml
+
+  sensors-badezimmer:
+    custom_fields:
+      !include blob/sensors/sensors-badezimmer.yaml
+
+  sensors-kinderzimmer:
+    custom_fields:
+      !include blob/sensors/sensors-kinderzimmer.yaml
+
+  sensors-schlafzimmer:
+    custom_fields:
+      !include blob/sensors/sensors-schlafzimmer.yaml
+
+  sensors-dusche:
+    custom_fields:
+      !include blob/sensors/sensors-dusche.yaml
+
+  sensors-untergeschoss:
+    custom_fields:
+      !include blob/sensors/sensors-untergeschoss.yaml
+
+  sensors-arbeitszimmer:
+    custom_fields:
+      !include blob/sensors/sensors-arbeitszimmer.yaml
+
+  sensors-küche:
+    custom_fields:
+      !include blob/sensors/sensors-kueche.yaml
+
+  sensors-obergeschoss:
+    custom_fields:
+      !include blob/sensors/sensors-obergeschoss.yaml
+
+  sensors-flur:
+    custom_fields:
+      !include blob/sensors/sensors-flur.yaml
+
+  sensors-wohnzimmer:
+    custom_fields:
+      !include blob/sensors/sensors-wohnzimmer.yaml
+
+  sensors-haus:
+    custom_fields:
+      !include blob/sensors/sensors-haus.yaml
+
+  path-shutter:
+    custom_fields:
+      !include blob/icons/path-shutter.yaml
+
+  path-lights:
+    custom_fields:
+      !include blob/icons/path-lights.yaml
+
+  path-devices:
+    custom_fields:
+      !include blob/icons/path-devices.yaml
+
+  path-sensors:
+    custom_fields:
+      !include blob/icons/path-sensors.yaml
+
+  path-girl:
+    custom_fields:
+      !include blob/icons/path-girl.yaml
+
+  path-kid:
+    custom_fields:
+      !include blob/icons/path-kid.yaml
+
+  path-man:
+    custom_fields:
+      !include blob/icons/path-man.yaml
+
+decluttering_templates:
+  mini-graph:
+    card:
+      type: 'custom:mini-graph-card'
+      entities:
+        - entity: '[[entity]]'
+      font_size: 75
+      line_color: '[[color]]'
+      line_width: 8
+      hour24: true
+      show:
+        labels: true
+        name: false
+        labels_secondary: true
+        points: true
+      name: 'Temperatur'
+      style: |
+        ha-card {
+          margin-top: 0px !important;
+          font-family: San Francisco;
+          font-weight: 700;
+          border-radius: 10px;
+          background-color: #222;
+        }
+        ha-card > div.header.flex > div {
+          font-size: 30px;
+          text-align: left;
+          margin-left: -10px;
+        }
+        .name {
+          font-family: San Francisco;
+          color: #fff;
+        }
+        .name > span {
+          font-weight: 700 !important;
+          color: #fff;
+        }
+        ha-card > div.header.flex > div.name.flex > span {
+          font-weight: 700 !important;
+          color: #fff;
+        }
+        ha-card > div.states.flex {
+          font-weight: 700 !important;
+          color: #fff;
+        }
+        div.name, span.ellipsis{
+          font-family: San Francisco;
+          font-weight: 700 !important;
+          color: #fff;
+        }
+
+  mini-graph2:
+    card:
+      type: 'custom:mini-graph-card'
+      entities:
+        - entity: '[[entity]]'
+      font_size: 75
+      line_color: '[[color]]'
+      line_width: 1
+      hour24: true
+      hours_to_show: 12
+      points_per_hour: 12
+      update_interval: 30
+      aggregate_func: max
+      smoothing: false
+      state_map:
+        - value: "off"
+          label: Ruhig
+        - value: "on"
+          label: Bewegung
+      show:
+        labels: true
+        name: false
+        labels_secondary: false
+        points: true
+      name: 'Temperatur'
+      style: |
+        ha-card {
+          margin-top: 0px !important;
+          font-family: San Francisco;
+          font-weight: 700;
+          border-radius: 10px;
+          background-color: #222;
+        }
+        ha-card > div.header.flex > div {
+          font-size: 30px;
+          text-align: left;
+          margin-left: -10px;
+        }
+        .name {
+          font-family: San Francisco;
+          color: #fff;
+        }
+        .name > span {
+          font-weight: 700 !important;
+          color: #fff;
+        }
+        ha-card > div.header.flex > div.name.flex > span {
+          font-weight: 700 !important;
+          color: #fff;
+        }
+        ha-card > div.states.flex {
+          font-weight: 700 !important;
+          color: #fff;
+        }
+        div.name, span.ellipsis{
+          font-family: San Francisco;
+          font-weight: 700 !important;
+          color: #fff;
+        }
+
+  header:
+    card:
+      style: >
+        ha-card {
+          box-shadow: none;
+          height: 100%;
+          background: none;
+          font-family: San Francisco;
+          font-weight: 700;
+          font-size: 3em;
+          line-height: 1em;
+          color: #333;
+          text-rendering: optimizeLegibility;
+          margin-left: -15px;
+        }
+      type: markdown
+      content: |
+        {{ states("sensor.sleep_periods") }}. <br>
+    default: null
+
+  subheader:
+    card:
+      style: >
+        ha-card {
+          box-shadow: none;
+          height: 100%;
+          background: none;
+          font-family: San Francisco;
+          font-weight: 700;
+          font-size: 2em;
+          line-height: 1em;
+          color: #575757;
+          text-rendering: optimizeLegibility;
+          margin-left: -15px;
+          margin-top: -20px;
+          margin-bottom: -20px;
+        }
+      type: markdown
+      content: |
+        [[content]]
+    default: null
+
+  title:
+    card:
+      style: >
+        ha-card {
+          box-shadow: none;
+          height: 100%;
+          background: none;
+          font-family: San Francisco;
+          font-weight: 700;
+          font-size: 1.4em;
+          color: #111;
+          text-rendering: optimizeLegibility;
+          margin-left: -15px;
+          margin-top: -20px;
+          margin-bottom: -20px;
+        }
+      type: markdown
+      content: |
+        [[content]]
+    default: null
+
+  subtitle:
+    card:
+      style: >
+        ha-card {
+          box-shadow: none;
+          height: 100%;
+          background: none;
+          font-family: San Francisco;
+          font-weight: 500;
+          font-size: 1.2em;
+          color: #333;
+          text-rendering: optimizeLegibility;
+          margin-left: -15px;
+          margin-top: -20px;
+          margin-bottom: -10px;
+        }
+      type: markdown
+      content: |
+        [[content]]
+    default: null
+
+  device:
+    card:
+      style: >
+        ha-card {
+          box-shadow: none;
+          height: 100%;
+          background: none;
+          font-family: San Francisco;
+          font-weight: 700;
+          font-size: 13px;
+          color: #fff;
+          text-rendering: optimizeLegibility;
+          text-align: center;
+          position: static;
+          margin-top: -20px;
+          margin-bottom: -25px;
+        }
+      type: markdown
+      content: |
+        [[content]]
+    default: null
+
+  es-icon:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      show_name: false
+      styles:
+        !include blob/styles/style-icon.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  path:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      tap_action:
+        action: navigate
+        navigation_path: '[[navigation_path]]'
+      show_icon: false
+      show_state: false
+      styles:
+        !include blob/styles/style-card-path.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  path-persons:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      tap_action:
+        !include blob/taps/tap-action-man.yaml
+      show_icon: false
+      show_state: false
+      styles:
+        !include blob/styles/style-card-path.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es:
+    card:
+      custom_fields:
+        !include blob/circles/circle-x.yaml
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      hold_action:
+        !include blob/holds/hold-action-es.yaml
+      tap_action:
+        action: toggle
+      show_icon: false
+      show_state: true
+      state:
+        !include blob/states/state-x.yaml
+      styles:
+        !include blob/styles/style-card.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-3:
+    card:
+      custom_fields:
+        !include blob/circles/circle-x.yaml
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      hold_action:
+        !include blob/holds/hold-action-es-3.yaml
+      tap_action:
+        action: toggle
+      show_icon: false
+      show_state: true
+      state:
+        !include blob/states/state-x.yaml
+      styles:
+        !include blob/styles/style-card.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-kinderzimmer:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-kinderzimmer.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-schlafzimmer:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-schlafzimmer.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-dusche:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-dusche.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-untergeschoss:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-untergeschoss.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-arbeitszimmer:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-arbeitszimmer.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-küche:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-kueche.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-obergeschoss:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-obergeschoss.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-flur:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-flur.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-wohnzimmer:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-wohnzimmer.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-sensors-haus:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      show_icon: false
+      show_state: false
+      tap_action:
+        !include blob/taps/tap-action-es-haus.yaml
+      styles:
+        !include blob/styles/style-card-sensors.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-cover:
+    card:
+      custom_fields:
+        !include blob/circles/circle-x.yaml
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      hold_action:
+        !include blob/holds/hold-action-es-cover.yaml
+      tap_action:
+        action: toggle
+      show_icon: false
+      show_state: true
+      state:
+        !include blob/states/state-x.yaml
+      styles:
+        !include blob/styles/style-card.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-speaker-1:
+    card:
+      custom_fields:
+        !include blob/circles/circle-x.yaml
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      hold_action:
+        !include blob/holds/hold-action-es-speaker-1.yaml
+      tap_action:
+        action: toggle
+      show_icon: false
+      show_state: true
+      state:
+        !include blob/states/state-x.yaml
+      styles:
+        !include blob/styles/style-card.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-switch:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      tap_action:
+        action: toggle
+      show_icon: false
+      show_state: true
+      state:
+        !include blob/states/state-es.yaml
+      styles:
+        !include blob/styles/style-card.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+  es-vacuum:
+    card:
+      entity: '[[entity-1]]'
+      name: '[[name-1]]'
+      hold_action:
+        !include blob/holds/hold-action-vacuum.yaml
+      show_icon: false
+      show_state: true
+      state:
+        !include blob/states/state-x.yaml
+      styles:
+        !include blob/styles/styles-x.yaml
+      tap_action:
+        !include blob/taps/tap-action-es-vacuum.yaml
+      template: '[[template]]'
+      type: 'custom:button-card'
+    default: null
+
+views:
+
+  - background: center / cover no-repeat url("/local/Fluid-20s-100px.svg") fixed
+    badges: []
+    cards:
+      - cards:
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: header
+                type: 'custom:decluttering-card'
+                variables:
+                  - content: Sensoren
+            type: horizontal-stack
+
+          - break
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #575757;
+                    text-rendering: optimizeLegibility;
+                    text-align: left;
+                    position: static;
+                    margin-top: -25px;
+                    margin-bottom: 0px;
+                    margin-left: -16px;
+                  }
+                content: >
+                  <span>{% if is_state('lock.haus', 'locked') %}Das Haus ist verriegelt.{% endif %}{% if is_state('lock.haus', 'unlocked') %}Das Haus ist entriegelt.{% endif %}{% if is_state('binary_sensor.fenster_turkontaktsensor_1', 'off') %}
+                  Die Haustür ist geschlossen.{% endif %}
+                  {% if is_state('binary_sensor.fenster_turkontaktsensor_1', 'on') %}
+                  Die Haustür ist offen.{% endif %}
+                  {% if is_state('cover.rollladen', 'closed') %}Die Rollladen sind geschlossen.{% endif %}
+                  </span>
+
+#                  <br><span>Die Außentemperatur beträgt {{ states('sensor.outdoor_bewegungsmelder_1') }}°. In den nächsten acht Stunden wird die Temperatur {{ states('sensor.wetter_temperature_8h') }}° betragen. Die Regenwahrscheinlichkeit beträgt {{ states('sensor.wetter_precip_probability_8h') }} %.
+
+            type: horizontal-stack
+          - break
+
+#          - cards:
+#              - type: weather-forecast
+#                entity: weather.home
+#                show_forecast: true
+#                name: Haus
+#                style: 'ha-card { box-shadow: none; background-color: rgba(255, 255, 255, 0.7); border-radius: 20px; font-family: San Francisco; font-weight: 700; font-size: 12px; color: #575757; text-rendering: optimizeLegibility;}'
+#
+#            type: horizontal-stack
+
+
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: path
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: path-shutter
+                  - entity-1: cover.rollladen
+                  - name-1: Rollladen
+                  - navigation_path: /lovelace/Rollladen
+
+              - style: 'ha-card { width: 10px; }'
+                template: path
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: path-lights
+                  - entity-1: light.lichter
+                  - name-1: Licht
+                  - navigation_path: /lovelace/Licht
+
+              - style: 'ha-card { width: 10px; }'
+                template: path
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: path-devices
+                  - entity-1: cover.rollladen
+                  - name-1: Geräte
+                  - navigation_path: /lovelace/Geraete
+
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: path
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: path-sensors
+                  - entity-1: cover.rollladen
+                  - name-1: Sensoren
+                  - navigation_path: /lovelace/Sensoren
+
+              - style: 'ha-card { width: 10px; }'
+                template: path-persons
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: path-girl
+                  - entity-1: cover.rollladen
+                  - name-1: N
+
+                  - navigation_path: /lovelace/Sensoren
+
+              - style: 'ha-card { width: 10px; }'
+                template: path-persons
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: path-man
+                  - entity-1: cover.rollladen
+                  - name-1: E
+                  - entity-2: device_tracker.iphone_2
+                  - entity-3: sensor.iphone_battery_level
+                  - entity-4: sensor.iphone_geocoded_location
+                  - entity-5: sensor.iphone_steps
+                  - entity-6: sensor.iphone_activity
+                  - entity-7: sensor.iphone_distance
+                  - entity-8: sensor.iphone_last_update_trigger
+                  - navigation_path: /lovelace/Sensoren
+
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: path-persons
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: path-kid
+                  - entity-1: cover.rollladen
+                  - name-1: S
+                  - entity-2: device_tracker.iphone_2
+                  - entity-3: sensor.iphone_battery_level
+                  - entity-4: sensor.iphone_geocoded_location
+                  - entity-5: sensor.iphone_steps
+                  - entity-6: sensor.iphone_activity
+                  - entity-7: sensor.iphone_distance
+                  - entity-8: sensor.iphone_last_update_trigger
+                  - navigation_path: /lovelace/Sensoren
+
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+
+            type: horizontal-stack
+          - break
+
+        column_width: 80%
+        justify_content: center
+        layout: horizontal
+        max_width: 350px
+        type: 'custom:layout-card'
+    panel: true
+    path: 'Home'
+    title: 'Home'
+
+
+
+
+  - background: center / cover no-repeat url("/local/Foam-10s-120px.svg") fixed
+    badges: []
+    cards:
+      - cards:
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #575757;
+                    text-rendering: optimizeLegibility;
+                    text-align: left;
+                    position: static;
+                    margin-top: -25px;
+                    margin-bottom: 0px;
+                    margin-left: -16px;
+                  }
+                content: >
+                  [<ha-icon icon="mdi:home-assistant"></ha-icon>](/lovelace/Home)
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: title
+                type: 'custom:decluttering-card'
+                variables:
+                  - content: Lichtsteuerung
+            type: horizontal-stack
+
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    color: #555;
+                    text-rendering: optimizeLegibility;
+                    margin-left: -15px;
+                    margin-top: -17px;
+                    margin-bottom: 0px;
+                  }
+                content: >
+                  {% if states.sensor.lights_es_count_on.state == "0" %} Alle Lichter sind ausgeschaltet.{% elif states.sensor.lights_es_count_on.state == "1" %} Ein Licht ist eingeschaltet.{% else %} {{states.sensor.lights_es_count_on.state}} Lichter sind eingeschaltet. {% endif %}
+            type: horizontal-stack
+
+          - break
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: arbeitszimmer
+                  - entity-1: light.arbeitszimmer
+                  - name-1: Arbeitszimmer
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: dusche
+                  - entity-1: light.dusche
+                  - name-1: Dusche
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.dusche_hell
+                  - scene-relax: scene.dusche_relax
+              - template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: eingang
+                  - entity-1: light.eingang
+                  - name-1: Eingang
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.eingang_hell
+                  - scene-relax: scene.eingang_relax
+            type: horizontal-stack
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: essbereich
+                  - entity-1: light.essbereich
+                  - name-1: Essbereich
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.essbereich_hell
+                  - scene-relax: scene.essbereich_relax
+              - template: es-3
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: freizeitraum
+                  - entity-1: light.tischlampe
+                  - name-1: Freizeitraum
+                  - template-1: freizeitraum
+                  - entity-2: light.stehleuchte
+                  - name-2: Deckenleuchte
+                  - template-2: wohnzimmer
+                  - entity-3: light.deckenleuchte_freizeitraum
+                  - name-3: Stehleuchte
+                  - template-3: freizeitraum
+                  - entity-4: light.stehleuchte
+                  - name-4: LED
+                  - template-4: badezimmer
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.freizeitraum_hell
+                  - scene-relax: scene.freizeitraum_relax
+              - template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: obergeschoss
+                  - entity-1: light.gang
+                  - name-1: Obergeschoss
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.gang_hell
+                  - scene-relax: scene.gang_relax
+            type: horizontal-stack
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: hauseingang
+                  - entity-1: light.hauseingang
+                  - name-1: Hauseingang
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.hauseingang_hell
+                  - scene-relax: scene.hauseingang_relax
+              - template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: untergeschoss
+                  - entity-1: light.keller
+                  - name-1: Untergeschoss
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.untergeschoss_hell
+                  - scene-relax: scene.untergeschoss_relax
+              - template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: flur
+                  - entity-1: light.flur
+                  - name-1: Flur
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.flur_hell
+                  - scene-relax: scene.flur_relax
+            type: horizontal-stack
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-3
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: schlafzimmer
+                  - entity-1: light.schlafzimmer_2
+                  - name-1: Schlafzimmer
+                  - template-1: schlafzimmer
+                  - entity-2: light.schlafzimmer_2
+                  - name-2: Tischlampe
+                  - template-2: schlafzimmer
+                  - entity-3: light.schlafzimmer_3
+                  - name-3: Decke
+                  - template-3: eingang
+                  - entity-4: light.schlafzimmer_4
+                  - name-4: Wand
+                  - template-4: untergeschoss
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.schlafzimmer_hell
+                  - scene-relax: scene.schlafzimmer_relax
+              - template: es-3
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: wohnzimmer
+                  - entity-1: light.tischlampe
+                  - name-1: Wohnzimmer
+                  - template-1: wohnzimmer
+                  - entity-2: light.wohnzimmer_3
+                  - name-2: Stehleuchte
+                  - template-2: wohnzimmer
+                  - entity-3: light.tischlampe
+                  - name-3: Tischlampe
+                  - template-3: schlafzimmer
+                  - entity-4: light.deckenleuchte_rechts
+                  - name-4: Deckenleuchte
+                  - template-4: eingang
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.wohnzimmer_hell
+                  - scene-relax: scene.wohnzimmer_relax
+              - template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: badezimmer
+                  - entity-1: switch.badezimmer_25
+                  - name-1: Badezimmer
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.flur_hell
+                  - scene-relax: scene.flur_relax
+            type: horizontal-stack
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-3
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: kinderzimmer
+                  - entity-1: light.kinderzimmer
+                  - name-1: Kinderzimmer
+                  - template-1: kinderzimmer
+                  - entity-2: light.kinderzimmer_1
+                  - name-2: Rechts
+                  - template-2: kinderzimmer
+                  - entity-3: light.kinderzimmer_2
+                  - name-3: Links
+                  - template-3: kinderzimmer
+                  - entity-4: light.kinderzimmer_2
+                  - name-4: Links
+                  - template-4: kinderzimmer
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.kinderzimmer_hell
+                  - scene-relax: scene.kinderzimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: garten
+                  - entity-1: light.kinderzimmer
+                  - name-1: Garten
+                  - state-1: 'on'
+                  - state-2: 'off'
+                  - circle-1: entity.attributes.brightness
+                  - circle-2: (254 / 100)
+                  - circle-3: 'on'
+                  - circle-4: brightness
+                  - scene-hell: scene.kinderzimmer_hell
+                  - scene-relax: scene.kinderzimmer_relax
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - break
+        column_width: 90%
+        justify_content: center
+        layout: horizontal
+        max_width: 350px
+        type: 'custom:layout-card'
+    panel: true
+    path: Licht
+    title: Licht
+  - background: center / cover no-repeat url("/local/Wave-20s-100px.svg") fixed
+    badges: []
+    cards:
+      - cards:
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #575757;
+                    text-rendering: optimizeLegibility;
+                    text-align: left;
+                    position: static;
+                    margin-top: -25px;
+                    margin-bottom: 0px;
+                    margin-left: -16px;
+                  }
+                content: >
+                  [<ha-icon icon="mdi:home-assistant"></ha-icon>](/lovelace/Home)
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: title
+                type: 'custom:decluttering-card'
+                variables:
+                  - content: Rollladen
+            type: horizontal-stack
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    color: #555;
+                    text-rendering: optimizeLegibility;
+                    margin-left: -15px;
+                    margin-top: -17px;
+                    margin-bottom: 0px;
+                  }
+                content: >
+                  {% if states.sensor.covers_es_count_on.state == "0" %} Alle Rollladen sind geschlossen.{% elif states.sensor.covers_es_count_on.state == "1" %} Eine Rolllade ist offen.{% else %} {{states.sensor.covers_es_count_on.state}} Rollladen sind offen. {% endif %}
+            type: horizontal-stack
+
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-cover
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: shutter
+                  - entity-1: cover.roller_shutter_4_10
+                  - name-1: Arbeitszimmer
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es-cover
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: shutter
+                  - entity-1: cover.roller_shutter_3_9
+                  - name-1: Freizeitraum
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es-cover
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: shutter
+                  - entity-1: cover.roller_shutter_2_7
+                  - name-1: Flur
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+            type: horizontal-stack
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-cover
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: shutter
+                  - entity-1: cover.roller_shutter_5
+                  - name-1: Wohnzimmer L
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es-cover
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: shutter
+                  - entity-1: cover.roller_shutter_1_6
+                  - name-1: Wohnzimmer R
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es-cover
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: shutter
+                  - entity-1: cover.tradfri_blind_2
+                  - name-1: Küche L
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+            type: horizontal-stack
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-cover
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: shutter
+                  - entity-1: cover.tradfri_blind
+                  - name-1: Küche R
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+        column_width: 90%
+        justify_content: center
+        layout: horizontal
+        max_width: 350px
+        type: 'custom:layout-card'
+    panel: true
+    path: 'Rollladen'
+    title: 'Rollladen'
+  - background: center / cover no-repeat url("/local/Valley-20s-100px.svg") fixed
+    badges: []
+    cards:
+      - cards:
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #575757;
+                    text-rendering: optimizeLegibility;
+                    text-align: left;
+                    position: static;
+                    margin-top: -25px;
+                    margin-bottom: 0px;
+                    margin-left: -16px;
+                  }
+                content: >
+                  [<ha-icon icon="mdi:home-assistant"></ha-icon>](/lovelace/Home)
+            type: horizontal-stack
+          - break
+
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: title
+                type: 'custom:decluttering-card'
+                variables:
+                  - content: Mediensteuerung
+            type: horizontal-stack
+
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    color: #555;
+                    text-rendering: optimizeLegibility;
+                    margin-left: -15px;
+                    margin-top: -17px;
+                    margin-bottom: 0px;
+                  }
+                content: >
+                  {% if states.sensor.media_player_es_count_on.state == "0" %} Alle Medien sind ausgeschaltet.{% elif states.sensor.media_player_es_count_on.state == "1" %} Ein Mediengerät spielt.{% else %} {{states.sensor.media_player_es_count_on.state}} Mediengeräte spielen. {% endif %}
+            type: horizontal-stack
+
+          - break
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-speaker-1
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: speaker
+                  - entity-1: media_player.kinderzimmer
+                  - name-1: Kinderzimmer
+                  - state-1: 'playing'
+                  - state-2: 'paused'
+                  - circle-1: entity.attributes.volume_level
+                  - circle-2: 0.01
+                  - circle-3: 'playing'
+                  - circle-4: volume_level
+                  - playlist-1: input_boolean.sofie_playlist_1
+                  - playlist-name-1: Play 1
+                  - playlist-2: input_boolean.sofie_playlist_2
+                  - playlist-name-2: Play 2
+                  - playlist-3: input_boolean.sofie_playlist_3
+                  - playlist-name-3: Play 3
+                  - playlist-4: input_boolean.sofie_playlist_4
+                  - playlist-name-4: Play 4
+                  - playlist-5: input_boolean.sofie_playlist_5
+                  - playlist-name-5: Play 5
+                  - playlist-6: input_boolean.sofie_playlist_6
+                  - playlist-name-6: Play 6
+                  - playlist-7: input_boolean.sofie_playlist_7
+                  - playlist-name-7: Play 7
+                  - playlist-8: input_boolean.sofie_playlist_8
+                  - playlist-name-8: Play 8
+                  - playlist-9: input_boolean.sonos_kinderzimmer_musik
+                  - playlist-name-9: Musik
+              - style: 'ha-card { width: 10px; }'
+                template: es-speaker-1
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: speaker
+                  - entity-1: media_player.wohnzimmer
+                  - name-1: Wohnzimmer
+                  - state-1: playing
+                  - state-2: paused
+                  - circle-1: entity.attributes.volume_level
+                  - circle-2: 0.01
+                  - circle-3: 'playing'
+                  - circle-4: volume_level
+                  - playlist-1: input_boolean.sonos_playlist_1
+                  - playlist-name-1: Play 1
+                  - playlist-2: input_boolean.sonos_playlist_2
+                  - playlist-name-2: Play 2
+                  - playlist-3: input_boolean.sonos_playlist_3
+                  - playlist-name-3: Play 3
+                  - playlist-4: input_boolean.sonos_playlist_4
+                  - playlist-name-4: Play 4
+                  - playlist-5: input_boolean.sonos_playlist_5
+                  - playlist-name-5: Play 5
+                  - playlist-6: input_boolean.sonos_playlist_6
+                  - playlist-name-6: Play 6
+                  - playlist-7: input_boolean.sonos_playlist_7
+                  - playlist-name-7: Play 7
+                  - playlist-8: input_boolean.sonos_playlist_8
+                  - playlist-name-8: Play 8
+                  - playlist-9: input_boolean.sonos_playlist_9
+                  - playlist-name-9: Play 9
+              - style: 'ha-card { width: 10px; }'
+                template: es-speaker-1
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: tv
+                  - entity-1: media_player.wohnzimmer_3
+                  - name-1: Wohnzimmer
+                  - state-1: playing
+                  - state-2: paused
+                  - circle-1: entity.attributes.volume_level
+                  - circle-2: 0.01
+                  - circle-3: 'playing'
+                  - circle-4: volume_level
+                  - playlist-1: input_boolean.sonos_playlist_1
+                  - playlist-name-1: Play 1
+                  - playlist-2: input_boolean.sonos_playlist_2
+                  - playlist-name-2: Play 2
+                  - playlist-3: input_boolean.sonos_playlist_3
+                  - playlist-name-3: Play 3
+                  - playlist-4: input_boolean.sonos_playlist_4
+                  - playlist-name-4: Play 4
+                  - playlist-5: input_boolean.sonos_playlist_5
+                  - playlist-name-5: Play 5
+                  - playlist-6: input_boolean.sonos_playlist_6
+                  - playlist-name-6: Play 6
+                  - playlist-7: input_boolean.sonos_playlist_7
+                  - playlist-name-7: Play 7
+                  - playlist-8: input_boolean.sonos_playlist_8
+                  - playlist-name-8: Play 8
+                  - playlist-9: input_boolean.sonos_playlist_9
+                  - playlist-name-9: Play 9
+            type: horizontal-stack
+          - break
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: title
+                type: 'custom:decluttering-card'
+                variables:
+                  - content: Steckdosen
+            type: horizontal-stack
+
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    color: #555;
+                    text-rendering: optimizeLegibility;
+                    margin-left: -15px;
+                    margin-top: -17px;
+                    margin-bottom: 0px;
+                  }
+                content: >
+                  {% if states.sensor.devices_es_count_on.state == "0" %} Alle Steckdosen sind ausgeschaltet.{% elif states.sensor.devices_es_count_on.state == "1" %} Eine Steckdose ist an.{% else %} {{states.sensor.devices_es_count_on.state}} Steckdosen sind an. {% endif %}
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-switch
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: switch
+                  - entity-1: switch.steckdose_1
+                  - name-1: Steckdose
+              - style: 'ha-card { width: 10px; }'
+                template: es-switch
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: switch
+                  - entity-1: switch.steckdose_2
+                  - name-1: Steckdose 2
+              - style: 'ha-card { width: 10px; }'
+                template: es-switch
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: switch
+                  - entity-1: switch.steckdose_3
+                  - name-1: Steckdose 3
+            type: horizontal-stack
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-switch
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: switch
+                  - entity-1: switch.steckdose_4
+                  - name-1: Steckdose 4
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                style: 'ha-card { width: 10px; }'
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: title
+                type: 'custom:decluttering-card'
+                variables:
+                  - content: Haushaltsgeräte
+            type: horizontal-stack
+
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    color: #555;
+                    text-rendering: optimizeLegibility;
+                    margin-left: -15px;
+                    margin-top: -17px;
+                    margin-bottom: 0px;
+                  }
+                content: >
+                  {% if is_state('sensor.vacuum_status', 'Status: Cleaning') %}
+                  Staubi reinigt.{% endif %}
+                  {% if is_state('sensor.vacuum_status', 'Status: Paused') %}
+                  Staubi ist pausiert{% endif %}
+                  {% if is_state('sensor.vacuum_status', 'Status: Returning home') %}
+                  Staubi fährt zurück.{% endif %}
+                  {% if is_state('sensor.vacuum_status', 'Status: Charging') %}
+                  Staubi ist angedockt.{% endif %}
+                  {% if is_state('sensor.vacuum_status', 'Status: Charger disconnected') %}
+                  Staubi ist im Standby.{% endif %}
+            type: horizontal-stack
+          - break
+          - cards:
+
+              - style: 'ha-card { width: 10px; }'
+                template: es-vacuum
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: vacuum
+                  - entity-1: vacuum.staubsauger
+                  - name-1: Staubi
+            type: horizontal-stack
+          - break
+        column_width: 90%
+        justify_content: center
+        layout: horizontal
+        max_width: 350px
+        type: 'custom:layout-card'
+    panel: true
+    path: 'Geraete'
+    title: 'Geräte'
+
+  - background: center / cover no-repeat url("/local/Fluid-20s-150px.svg") fixed
+    badges: []
+    cards:
+      - cards:
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #575757;
+                    text-rendering: optimizeLegibility;
+                    text-align: left;
+                    position: static;
+                    margin-top: -25px;
+                    margin-bottom: 0px;
+                    margin-left: -16px;
+                  }
+                content: >
+                  [<ha-icon icon="mdi:home-assistant"></ha-icon>](/lovelace/Home)
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+              - height: 30
+                size: 30
+                type: 'custom:gap-card'
+            type: horizontal-stack
+          - break
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: title
+                type: 'custom:decluttering-card'
+                variables:
+                  - content: Sensoren
+            type: horizontal-stack
+          - cards:
+              - type: markdown
+                style: >
+                  ha-card {
+                    box-shadow: none;
+                    height: 100%;
+                    background: none;
+                    font-family: San Francisco;
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    color: #555;
+                    text-rendering: optimizeLegibility;
+                    margin-left: -15px;
+                    margin-top: -17px;
+                    margin-bottom: 0px;
+                  }
+                content: >
+                  {% if states.binary_sensor.bewegungsmelder_5.state == "on" %} Bewegung im Arbeitszimmer.{% endif %}
+                  {% if states.binary_sensor.bewegungsmelder_4.state == "on" %} Bewegung im Schlafzimmer.{% endif %}
+                  {% if states.binary_sensor.bewegungsmelder_3.state == "on" %} Bewegung im Obergeschoss.{% endif %}
+                  {% if states.binary_sensor.bewegungsmelder_2.state == "on" %} Bewegung im Arbeitszimmer.{% endif %}
+                  {% if states.binary_sensor.bewegungsmelder_1.state == "on" %} Bewegung in der Dusche.{% endif %}
+                  {% if states.sensor.time.state < "11:00"} !!!dsd.{% endif %}
+
+            type: horizontal-stack
+          - break
+          - cards:
+              - template: es-sensors-kinderzimmer
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-kinderzimmer
+                  - entity-1: sensor.multisensor_3
+                  - name-1: Kinderzimmer
+
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-schlafzimmer
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-schlafzimmer
+                  - entity-1: sensor.multisensor_4
+                  - name-1: Schlafzimmer
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+            type: horizontal-stack
+          - break
+
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-dusche
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-dusche
+                  - entity-1: sensor.multisensor_2
+                  - name-1: Dusche
+                  - entity-sd1:
+                  - entity-sd2:
+                  - entity-sd3: sensor.bewegungsmelder_1
+                  - entity-sd4: binary_sensor.vibrationssensor_1
+                  - entity-sd5: 'binary_sensor.vibrationssensor_1'
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-untergeschoss
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-untergeschoss
+                  - entity-1: sensor.status_vibration_2
+                  - name-1: Untergeschoss
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-arbeitszimmer
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-arbeitszimmer
+                  - entity-1: sensor.multisensor_1
+                  - name-1: Arbeitszimmer
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-küche
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-küche
+                  - entity-1: sensor.status_bewegungsmelder_1
+                  - name-1: Küche
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-obergeschoss
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-obergeschoss
+                  - entity-1: sensor.status_bewegungsmelder_3
+                  - name-1: Obergeschoss
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-flur
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-flur
+                  - entity-1: sensor.philips_bewegungsmelder_1
+                  - name-1: Flur
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+            type: horizontal-stack
+          - break
+
+          - cards:
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-wohnzimmer
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-wohnzimmer
+                  - entity-1: sensor.multisensor_5
+                  - name-1: Wohnzimmer
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+              - style: 'ha-card { width: 10px; }'
+                template: es-sensors-haus
+                type: 'custom:decluttering-card'
+                variables:
+                  - template: sensors-haus
+                  - entity-1: sensor.outdoor_bewegungsmelder_1
+                  - name-1: Haus
+                  - state-1: 'open'
+                  - state-2: 'closed'
+                  - circle-1: entity.attributes.current_position
+                  - circle-2: 1
+                  - circle-3: 'open'
+                  - circle-4: current_position
+                  - scene-hell: scene.arbeitszimmer_arbeitszimmer_hell
+                  - scene-relax: scene.arbeitszimmer_arbeitszimmer_relax
+            type: horizontal-stack
+          - break
+
+        column_width: 90%
+        justify_content: center
+        layout: horizontal
+        max_width: 350px
+        type: 'custom:layout-card'
+    panel: true
+    path: 'Sensoren'
+    title: 'Sensoren'
