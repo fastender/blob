@@ -111,16 +111,14 @@ my design could never be realized. Many thanks!
 The [Lovelace YAML-Modus](https://www.home-assistant.io/lovelace/yaml-mode/) is used and the codes are [splitted](https://www.home-assistant.io/docs/configuration/splitting_configuration/) with [!includes](https://www.youtube.com/watch?v=Ili8B4hgQ-g), [Lovelace Decluttering Card](https://github.com/custom-cards/decluttering-card) and [templates](https://github.com/custom-cards/button-card#configuration-templates).
 
 <p align="center">
-    <a name="Pic 1" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-1.png" alt="1" width="200"></a>
-    <a name="Pic 2" href="https://github.com/thomasloven"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-2.png" alt="2" width="200"></a>
-    <a name="Pic 3" href="https://github.com/custom-cards"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-3.png" alt="3" width="200"></a>
-    <a name="Pic 4" href="https://github.com/custom-cards"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-4.png" alt="4" width="200"></a>
-    <a name="Pic 5" href="https://github.com/custom-cards"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-5.png" alt="5" width="200"></a>
+    <a name="Pic 1" href="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-1.png"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-1.png" alt="1" width="200"></a>
+    <a name="Pic 2" href="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-2.png"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-2.png" alt="2" width="200"></a>
+    <a name="Pic 3" href="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-3.png"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-3.png" alt="3" width="200"></a>
+    <a name="Pic 4" href="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-4.png"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-4.png" alt="4" width="200"></a>
+    <a name="Pic 5" href="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-5.png"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-5.png" alt="5" width="200"></a>
 </p>
 
-<p align="center">
-    <a name="Pic 1" href="https://github.com/matt8707/hass-config"><img src="https://raw.githubusercontent.com/fastender/blob/master/logos/blob-video.mp4" alt="1" width="200"></a>
-</p>
+[Video](https://raw.githubusercontent.com/fastender/blob/master/logos/blob-video.mp4)
 
 <!-- AUTOMATIONS -->
 ## Automations
