@@ -122,10 +122,63 @@ The [Lovelace YAML-Modus](https://www.home-assistant.io/lovelace/yaml-mode/) is 
 
 <!-- AUTOMATIONS -->
 ## Automations
+
+Temperature notification by the sensor when nobody is at home and the temperature in certain rooms is above a certain temperature at a certain time. Only then should the air conditioner start.
+
+Daily automatic cleaning of certain areas at a certain time by the vacuum cleaner when nobody is at home.
+
+Automatic locking of the entrance door after a certain period of time.
+
+Automatic switching on of the entrance light when the entrance door is opened and switching off after a certain period of time.
+
+Light control of the Media Player in the living room (keyword: Movie), dimming of the lights during playback and brightening of the lights during pause/stop.
+
+Monitoring of washing machines and reminders
+https://philhawthorne.com/making-dumb-dishwashers-and-washing-machines-smart-alerts-when-the-dishes-and-clothes-are-cleaned/
+
+To use as few switches for the lights as possible, using sensors in each room for light control. Possibility of interrupting this automation when using Hue Switch Dimmer switch.
+
+No more water leaks by monitoring with the water sensor and notification.
+
+An image is displayed of the person entering the house when no person is at home.
+
+Greeting of the person when entering the house by analysing the presence with Bluetooth.
+
+Notification when the entrance door is not closed.
+
+Shutters control themselves at certain times. When no person is at home or after a certain time.
+
+All lights are controlled randomly in the house and give the impression that people are still at home. This is very efficient in deterring criminals.
+
+A dog barking scares off people who might ring your doorbell to check if you are at home. Simple and practical.
+
+Easier waking up with the sunlight and also playlist.
+https://www.wouterbulten.nl/blog/tech/custom-wake-up-light-with-node-red/
+
+Notification when letter is inserted.
+
+Monitoring of sleep quality and weight and other health data (heart, etc.). Notification when anomalies occur.
+
+Alexa reminds for sleep time. Prayer time. Dinner time. Homework time.
+
+Sonos in the nursery is controlled by a Hue Dimmer Switch. (Playlist selection and device control)
+
 More coming soon!
+
+
+
+
 
 ![Screenshot of Home Assistant Header](https://i.imgur.com/vjDH1LJ.png)
 
 <!-- TODO-LIST -->
 ## To-Do-List
+
+Control your garage and Apple TV with RM Link
+Better allocation of lights and control with Hue Dimmer Switches
+Automation of the shower. When humidity is high, the window is opened and vice versa. Scenes for shower.
+In the corridor area a tablet in which the Home Assistant is displayed.
+Alarm system is set autonomously.
+A charger is invisibly installed in the bedroom chest of drawers.
+
 More coming soon!
