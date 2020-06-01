@@ -123,6 +123,8 @@ The [Lovelace YAML-Modus](https://www.home-assistant.io/lovelace/yaml-mode/) is 
 <!-- AUTOMATIONS -->
 ## Automations
 
+This automations are largely guaranteed by NodeRed. There will be the possibility to switch them off manually via the view of the respective rooms in the settings:
+
 Temperature notification by the sensor when nobody is at home and the temperature in certain rooms is above a certain temperature at a certain time. Only then should the air conditioner start.
 
 Daily automatic cleaning of certain areas at a certain time by the vacuum cleaner when nobody is at home.
@@ -174,11 +176,16 @@ More coming soon!
 <!-- TODO-LIST -->
 ## To-Do-List
 
-Control your garage and Apple TV with RM Link
+Control garage and Apple TV with RM Link
+
 Better allocation of lights and control with Hue Dimmer Switches
+
 Automation of the shower. When humidity is high, the window is opened and vice versa. Scenes for shower.
+
 In the corridor area a tablet in which the Home Assistant is displayed.
+
 Alarm system is set autonomously.
+
 A charger is invisibly installed in the bedroom chest of drawers.
 
 More coming soon!
