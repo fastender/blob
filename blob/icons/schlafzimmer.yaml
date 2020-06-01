@@ -1,0 +1,310 @@
+      icon_hue: >
+        [[[ if (entity.state === 'on') return '<svg id="egvke68x7pzm1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+        shape-rendering="geometricPrecision"
+        text-rendering="geometricPrecision"><style><![CDATA[#egvke68x7pzm39 {
+        animation-name: egvke68x7pzm39__tt, egvke68x7pzm39_c_o;
+        animation-duration: 1000ms; animation-fill-mode: forwards;
+        animation-timing-function: linear; animation-direction: normal;
+        animation-iteration-count: 1;   }@keyframes egvke68x7pzm39__tt { 0%
+        {transform: translate(-21.924221px,-3.029004px) translate(0px,0px)} 50%
+        {transform: translate(-21.924221px,-3.029004px)
+        translate(0px,-0.500000px)} 100% {transform:
+        translate(-21.924221px,-3.029004px) translate(0px,0px)} }@keyframes
+        egvke68x7pzm39_c_o { 0% {opacity: 0} 100% {opacity: 1} }]]></style><g
+        id="egvke68x7pzm2" transform="matrix(0.67702955007553 0 0
+        0.67702955007553 3.26926660537720 -0.07077804207802)"><g
+        id="egvke68x7pzm3" transform="matrix(0.54323399066925 0 0
+        0.54323399066925 27.72696495056152 4.22197103500366)"><polygon
+        id="egvke68x7pzm4" points="-35.318001,34.474998 -37.049999,33.323002
+        -36.127998,33.970001" transform="matrix(1 0 0 1 14.05615139007568
+        -2.01436042785645)" fill="rgb(0,0,0)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm5"
+        points="-39.138000,31.110000 -38.270000,31.110000 -39.579000,29.604000
+        -39.892000,29.604000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm6"
+        points="-37.334000,32.962000 -35.329000,32.962000 -37.938000,31.455000
+        -38.831000,31.455000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm7"
+        points="-39.998000,25.913000 -39.998000,29.258000 -39.673000,29.258000
+        -39.673000,25.913000 -39.901000,25.913000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm8"
+        points="-30.277000,40.371000 -33.809000,33.307000 -34.423000,33.307000
+        -31.380000,40.371000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><rect id="egvke68x7pzm9" width="5.196000"
+        height="5.212000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -26.86884880065918 40.54346466064453)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm10"
+        points="-35.413000,46.275000 -37.195000,55.177000 -34.809000,55.177000
+        -31.735000,46.275000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm11"
+        points="-34.443000,55.177000 -33.819000,55.177000 -30.253000,46.275000
+        -31.371000,46.275000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><rect id="egvke68x7pzm12" width="1.150000"
+        height="5.212000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -17.26484870910645 40.54346466064453)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><rect id="egvke68x7pzm13"
+        width="3.716000" height="5.212000" rx="0" ry="0" transform="matrix(1 0 0
+        1 -21.32485008239746 40.54346466064453)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm14"
+        points="-47.773000,33.307000 -48.399000,33.307000 -51.933000,40.371000
+        -50.829000,40.371000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><rect id="egvke68x7pzm15" width="1.150000"
+        height="5.212000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -37.98184585571289 40.54346466064453)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><rect id="egvke68x7pzm16"
+        width="3.715000" height="5.212000" rx="0" ry="0" transform="matrix(1 0 0
+        1 -36.48684692382813 40.54346466064453)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm17"
+        points="-46.144000,32.147000 -47.776000,32.962000 -47.556000,32.962000"
+        transform="matrix(1 0 0 1 14.05615139007568 -0.17353294789791)"
+        fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><polygon
+        id="egvke68x7pzm18" points="-51.957000,46.275000 -48.390000,55.177000
+        -47.753000,55.177000 -50.838000,46.275000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm19"
+        points="-50.472000,46.275000 -47.386000,55.177000 -45.013000,55.177000
+        -46.796000,46.275000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm20"
+        points="-45.024000,33.307000 -47.396000,33.307000 -50.452000,40.371000
+        -46.790000,40.371000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm21"
+        points="-42.303000,29.604000 -42.627000,29.604000 -43.927000,31.110000
+        -43.056000,31.110000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm22"
+        points="-42.197000,25.913000 -42.309000,25.913000 -42.533000,25.913000
+        -42.533000,29.258000 -42.197000,29.258000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm23"
+        points="-44.368000,31.092000 -44.385000,31.110000 -44.383000,31.110000"
+        transform="matrix(1 0 0 1 14.05615139007568 -0.17353294789791)"
+        fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><polygon
+        id="egvke68x7pzm24" points="-44.660000,55.177000 -41.270000,55.177000
+        -41.270000,46.275000 -46.444000,46.275000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm25"
+        points="-44.874000,32.962000 -43.367000,31.455000 -44.258000,31.455000
+        -46.866000,32.962000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><rect id="egvke68x7pzm26" width="0.581000"
+        height="3.345000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -26.86884880065918 25.73946762084961)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm27"
+        points="-40.073000,25.567000 -40.073000,24.061000 -40.925000,24.061000
+        -40.925000,25.567000 -40.171000,25.567000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm28"
+        points="-40.925000,31.110000 -39.525000,31.110000 -40.277000,29.604000
+        -40.925000,29.604000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm29"
+        points="-37.186000,33.307000 -35.420000,40.371000 -31.755000,40.371000
+        -34.800000,33.307000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm30"
+        points="-40.925000,46.275000 -40.925000,55.177000 -37.549000,55.177000
+        -35.765000,46.275000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm31"
+        points="-40.925000,40.371000 -35.777000,40.371000 -37.542000,33.307000
+        -40.925000,33.307000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><rect id="egvke68x7pzm32" width="5.212000"
+        height="5.212000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -32.42584609985352 40.54346466064453)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm33"
+        points="-46.434000,40.371000 -41.270000,40.371000 -41.270000,33.307000
+        -44.668000,33.307000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm34"
+        points="-42.135000,25.567000 -42.024000,25.567000 -41.270000,25.567000
+        -41.270000,24.061000 -42.135000,24.061000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm35"
+        points="-44.385000,32.962000 -41.270000,32.962000 -41.270000,31.455000
+        -42.878000,31.455000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><rect id="egvke68x7pzm36" width="0.581000"
+        height="3.345000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -27.79384803771973 25.73946762084961)" fill="rgb(87,168,215)"
+        stroke="none" stroke-width="1"/><polygon id="egvke68x7pzm37"
+        points="-42.670000,31.110000 -41.270000,31.110000 -41.270000,29.604000
+        -41.917000,29.604000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/><polygon id="egvke68x7pzm38"
+        points="-40.925000,32.962000 -37.822000,32.962000 -39.317000,31.455000
+        -40.925000,31.455000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(87,168,215)" stroke="none"
+        stroke-width="1"/></g></g><g id="egvke68x7pzm39"
+        transform="translate(-21.924221,-3.029004) translate(0,0)"
+        opacity="0"><path id="egvke68x7pzm40"
+        d="M-39.433637,5.834075L-37.565472,5.834075L-35.831498,5.834075L-35.360081,5.834075L-34.894887,5.834075L-33.159746,5.834075L-31.292748,5.834075L-30.039914,5.834075L-29.669238,5.834075L-29.669238,-5.548000L-41.012417,-5.543333L-41.057147,-5.548000L-41.057147,5.834075L-40.681025,5.834075L-39.433637,5.834075Z"
+        transform="matrix(0.81089669466019 0 0 0.81089669466019
+        62.78059275016820 9.39895120628424)" fill="rgb(248,205,65)"
+        stroke="none" stroke-width="1"/></g></svg> '
+
+        ;   else return '<svg id="e3fsk1gvt4ve1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+        shape-rendering="geometricPrecision"
+        text-rendering="geometricPrecision"><style><![CDATA[#e3fsk1gvt4ve39 {
+        animation-name: e3fsk1gvt4ve39__tt, e3fsk1gvt4ve39_c_o;
+        animation-duration: 1000ms; animation-fill-mode: forwards;
+        animation-timing-function: linear; animation-direction: normal;
+        animation-iteration-count: 1;   }@keyframes e3fsk1gvt4ve39__tt { 0%
+        {transform: translate(-21.924221px,-3.029004px) translate(0px,0px)} 50%
+        {transform: translate(-21.924221px,-3.029004px)
+        translate(0px,-0.500000px)} 100% {transform:
+        translate(-21.924221px,-3.029004px) translate(0px,0px)} }@keyframes
+        e3fsk1gvt4ve39_c_o { 0% {opacity: 1} 100% {opacity: 0.500000}
+        }]]></style><g id="e3fsk1gvt4ve2" transform="matrix(0.67702955007553 0 0
+        0.67702955007553 3.26926660537720 -0.07077804207802)"><g
+        id="e3fsk1gvt4ve3" transform="matrix(0.54323399066925 0 0
+        0.54323399066925 27.72696495056152 4.22197103500366)"><polygon
+        id="e3fsk1gvt4ve4" points="-35.318001,34.474998 -37.049999,33.323002
+        -36.127998,33.970001" transform="matrix(1 0 0 1 14.05615139007568
+        -2.01436042785645)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve5"
+        points="-39.138000,31.110000 -38.270000,31.110000 -39.579000,29.604000
+        -39.892000,29.604000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve6"
+        points="-37.334000,32.962000 -35.329000,32.962000 -37.938000,31.455000
+        -38.831000,31.455000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve7"
+        points="-39.998000,25.913000 -39.998000,29.258000 -39.673000,29.258000
+        -39.673000,25.913000 -39.901000,25.913000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve8"
+        points="-30.277000,40.371000 -33.809000,33.307000 -34.423000,33.307000
+        -31.380000,40.371000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><rect id="e3fsk1gvt4ve9" width="5.196000"
+        height="5.212000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -26.86884880065918 40.54346466064453)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve10"
+        points="-35.413000,46.275000 -37.195000,55.177000 -34.809000,55.177000
+        -31.735000,46.275000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve11"
+        points="-34.443000,55.177000 -33.819000,55.177000 -30.253000,46.275000
+        -31.371000,46.275000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><rect id="e3fsk1gvt4ve12" width="1.150000"
+        height="5.212000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -17.26484870910645 40.54346466064453)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><rect id="e3fsk1gvt4ve13"
+        width="3.716000" height="5.212000" rx="0" ry="0" transform="matrix(1 0 0
+        1 -21.32485008239746 40.54346466064453)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve14"
+        points="-47.773000,33.307000 -48.399000,33.307000 -51.933000,40.371000
+        -50.829000,40.371000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><rect id="e3fsk1gvt4ve15" width="1.150000"
+        height="5.212000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -37.98184585571289 40.54346466064453)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><rect id="e3fsk1gvt4ve16"
+        width="3.715000" height="5.212000" rx="0" ry="0" transform="matrix(1 0 0
+        1 -36.48684692382813 40.54346466064453)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve17"
+        points="-46.144000,32.147000 -47.776000,32.962000 -47.556000,32.962000"
+        transform="matrix(1 0 0 1 14.05615139007568 -0.17353294789791)"
+        fill="rgb(95,98,103)" stroke="none" stroke-width="1"/><polygon
+        id="e3fsk1gvt4ve18" points="-51.957000,46.275000 -48.390000,55.177000
+        -47.753000,55.177000 -50.838000,46.275000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve19"
+        points="-50.472000,46.275000 -47.386000,55.177000 -45.013000,55.177000
+        -46.796000,46.275000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve20"
+        points="-45.024000,33.307000 -47.396000,33.307000 -50.452000,40.371000
+        -46.790000,40.371000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve21"
+        points="-42.303000,29.604000 -42.627000,29.604000 -43.927000,31.110000
+        -43.056000,31.110000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve22"
+        points="-42.197000,25.913000 -42.309000,25.913000 -42.533000,25.913000
+        -42.533000,29.258000 -42.197000,29.258000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve23"
+        points="-44.368000,31.092000 -44.385000,31.110000 -44.383000,31.110000"
+        transform="matrix(1 0 0 1 14.05615139007568 -0.17353294789791)"
+        fill="rgb(87,168,215)" stroke="none" stroke-width="1"/><polygon
+        id="e3fsk1gvt4ve24" points="-44.660000,55.177000 -41.270000,55.177000
+        -41.270000,46.275000 -46.444000,46.275000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve25"
+        points="-44.874000,32.962000 -43.367000,31.455000 -44.258000,31.455000
+        -46.866000,32.962000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><rect id="e3fsk1gvt4ve26" width="0.581000"
+        height="3.345000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -26.86884880065918 25.73946762084961)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve27"
+        points="-40.073000,25.567000 -40.073000,24.061000 -40.925000,24.061000
+        -40.925000,25.567000 -40.171000,25.567000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve28"
+        points="-40.925000,31.110000 -39.525000,31.110000 -40.277000,29.604000
+        -40.925000,29.604000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve29"
+        points="-37.186000,33.307000 -35.420000,40.371000 -31.755000,40.371000
+        -34.800000,33.307000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve30"
+        points="-40.925000,46.275000 -40.925000,55.177000 -37.549000,55.177000
+        -35.765000,46.275000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve31"
+        points="-40.925000,40.371000 -35.777000,40.371000 -37.542000,33.307000
+        -40.925000,33.307000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><rect id="e3fsk1gvt4ve32" width="5.212000"
+        height="5.212000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -32.42584609985352 40.54346466064453)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve33"
+        points="-46.434000,40.371000 -41.270000,40.371000 -41.270000,33.307000
+        -44.668000,33.307000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve34"
+        points="-42.135000,25.567000 -42.024000,25.567000 -41.270000,25.567000
+        -41.270000,24.061000 -42.135000,24.061000" transform="matrix(1 0 0 1
+        14.05615139007568 -0.17353294789791)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve35"
+        points="-44.385000,32.962000 -41.270000,32.962000 -41.270000,31.455000
+        -42.878000,31.455000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><rect id="e3fsk1gvt4ve36" width="0.581000"
+        height="3.345000" rx="0" ry="0" transform="matrix(1 0 0 1
+        -27.79384803771973 25.73946762084961)" fill="rgb(95,98,103)"
+        stroke="none" stroke-width="1"/><polygon id="e3fsk1gvt4ve37"
+        points="-42.670000,31.110000 -41.270000,31.110000 -41.270000,29.604000
+        -41.917000,29.604000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/><polygon id="e3fsk1gvt4ve38"
+        points="-40.925000,32.962000 -37.822000,32.962000 -39.317000,31.455000
+        -40.925000,31.455000" transform="matrix(1 0 0 1 14.05615139007568
+        -0.17353294789791)" fill="rgb(95,98,103)" stroke="none"
+        stroke-width="1"/></g></g><g id="e3fsk1gvt4ve39"
+        transform="translate(-21.924221,-3.029004) translate(0,0)"><path
+        id="e3fsk1gvt4ve40"
+        d="M-39.433637,5.834075L-37.565472,5.834075L-35.831498,5.834075L-35.360081,5.834075L-34.894887,5.834075L-33.159746,5.834075L-31.292748,5.834075L-30.039914,5.834075L-29.669238,5.834075L-29.669238,-5.548000L-41.012417,-5.543333L-41.057147,-5.548000L-41.057147,5.834075L-40.681025,5.834075L-39.433637,5.834075Z"
+        transform="matrix(0.81089669466019 0 0 0.81089669466019
+        62.78059275016820 9.39895120628424)" fill="rgb(158,160,162)"
+        stroke="none" stroke-width="1"/></g></svg>'; ]]]
