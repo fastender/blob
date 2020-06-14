@@ -131,8 +131,7 @@ There are a lot of palettes out there that let you do all sorts of crazy things.
 
 This automations are largely guaranteed by NodeRed. There will be the possibility to switch them off manually via the view of the respective rooms in the settings.
 
-1. SONOS in Living Room and Childrenroom is controlled by a Hue Dimmer Switch. Playlist selection and device control is enabled with this script: [Media](https://github.com/fastender/blob/blob/master/automations/media.json)
-
+The SONOS Play 3 Speakers in Living Room and Childrenroom is controlled by a Hue Dimmer Switch. Playlist selection and device control is enabled with this script: [Media](https://github.com/fastender/blob/blob/master/automations/media.json). Using this [bridge](https://github.com/jishi/node-sonos-http-api) in a Docker for the Sonos automation.
 
 More coming soon! See examples...
 
