@@ -123,17 +123,12 @@ The [Lovelace YAML-Modus](https://www.home-assistant.io/lovelace/yaml-mode/) is 
 <!-- AUTOMATIONS -->
 ## Automations
 
-I love NodeRed and use it for virtually all of my automations.  Node-Red is the perfect complement to Home Assistant, allowing for very complicated logic to be constructed visually through a simple “flow” interface and it integrates seamlessly with Home Assistant. 
+I love NodeRed and use it for virtually all of my automations.  Node-Red is the perfect complement to Home Assistant, allowing for very complicated logic to be constructed visually through a simple “flow” interface and it integrates seamlessly with Home Assistant. It's a visual automation editor that I find much easier to use than the YAML-based automation system in HomeAssistant. I also much prefer the easy debugging my automations that was difficult to do in HomeAssistant. There are a lot of palettes out there that let you do all sorts of crazy things. I use: node-red-contrib-schedex, node-red-contrib-time-range-switch and node-red-contrib-weekday. The automations are largely guaranteed by NodeRed. There will be the possibility to switch them off manually via the view of the respective rooms in the settings:
 
-It's a visual automation editor that I find much easier to use than the YAML-based automation system in HomeAssistant. I also much prefer the easy debugging my automations that was difficult to do in HomeAssistant.
+* The SONOS Play 3 Speakers in Living Room and Childrenroom is controlled by a Hue Dimmer Switch. Playlist selection and device control is enabled with this script: [Media](https://github.com/fastender/blob/blob/master/automations/media.json). Using this [bridge](https://github.com/jishi/node-sonos-http-api) in a Docker for the Sonos automation.
 
-There are a lot of palettes out there that let you do all sorts of crazy things. I use: node-red-contrib-schedex, node-red-contrib-time-range-switch and node-red-contrib-weekday.
 
-This automations are largely guaranteed by NodeRed. There will be the possibility to switch them off manually via the view of the respective rooms in the settings.
-
-The SONOS Play 3 Speakers in Living Room and Childrenroom is controlled by a Hue Dimmer Switch. Playlist selection and device control is enabled with this script: [Media](https://github.com/fastender/blob/blob/master/automations/media.json). Using this [bridge](https://github.com/jishi/node-sonos-http-api) in a Docker for the Sonos automation.
-
-More coming soon! See examples...
+#### More coming soon! See examples...
 
 Temperature notification by the sensor when nobody is at home and the temperature in certain rooms is above a certain temperature at a certain time. Only then should the air conditioner start.
 
