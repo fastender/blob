@@ -130,6 +130,8 @@ I love NodeRed and use it for virtually all of my automations.  Node-Red is the 
 
 #### More coming soon! See examples...
 
+If everyone leaves the house, all lights off, garage checks and closes itself if needed, same for the front door lock, blinds close, and alarm arms.
+
 Temperature notification by the sensor when nobody is at home and the temperature in certain rooms is above a certain temperature at a certain time. Only then should the air conditioner start.
 
 Daily automatic cleaning of certain areas at a certain time by the vacuum cleaner when nobody is at home.
@@ -145,7 +147,7 @@ https://philhawthorne.com/making-dumb-dishwashers-and-washing-machines-smart-ale
 
 To use as few switches for the lights as possible, using sensors in each room for light control. Possibility of interrupting this automation when using Hue Switch Dimmer switch.
 
-No more water leaks by monitoring with the water sensor and notification.
+No more water leaks by monitoring with the water sensor and notification: If water leak sensor detects water, turn all lights blue and on 100%. Also sends an alert to the phone alerting us of water. 
 
 An image is displayed of the person entering the house when no person is at home.
 
