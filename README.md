@@ -132,6 +132,10 @@ I love NodeRed and use it for virtually all of my automations.  Node-Red is the 
 
 If everyone leaves the house, all lights off, garage checks and closes itself if needed, same for the front door lock, blinds close, and alarm arms.
 
+When front door motion is triggered turn on the porch light and front door light.
+
+When a pet or person is detected outside the front-door camera we get a Notification alert to my phone
+
 Temperature notification by the sensor when nobody is at home and the temperature in certain rooms is above a certain temperature at a certain time. Only then should the air conditioner start.
 
 Daily automatic cleaning of certain areas at a certain time by the vacuum cleaner when nobody is at home.
