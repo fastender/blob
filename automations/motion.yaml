@@ -115,6 +115,7 @@ max_exceeded: silent
 
 variables:
   target_entity: !input target_entity
+  target_entity_dimmed: !input target_entity_dimmed  
   illuminance_currently: !input illuminance_sensor
   illuminance_cutoff: !input illuminance_cutoff
   blocker_entity: !input blocker_entity
@@ -161,6 +162,8 @@ action:
       entity_id: !input motion_sensor
       from: "on"
       to: "off"
+  - service: homeassistant.turn_on
+    entity_id: !input target_entity_dimmed
   - delay: 
       minutes: '{{ states[no_motion_wait].state | int }}'
   - condition: template
