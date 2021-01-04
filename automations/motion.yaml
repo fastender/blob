@@ -55,6 +55,11 @@ blueprint:
       description: The light, switch, scene to turn on (or script to run) when the automation is triggered.
       selector:
         entity:
+    target_entity_dimmed:
+      name: Target entity.
+      description: The light, switch, scene to turn on (or script to run) when the automation is triggered.
+      selector:
+        entity:   
     illuminance_sensor:
       name: (OPTIONAL) Illuminance sensor
       description: This sensor will be used to determine the illumination.
