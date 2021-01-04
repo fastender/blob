@@ -1,45 +1,14 @@
 blueprint:
-  name: Turn on light, switch, scene, script or group based on motion and illuminance.
+  name: Motion sensor controls the light
   description: >
-    Turn on a light, switch, scene, script or group based on motion detection, and low light level.
-
-    This blueprint uses helper entities you have to create yourself for some input values, to be able to dynamically set limits. 
-    For instructions on creating the helper entities take a look in the Home Assistant Community forum topic:
-    https://community.home-assistant.io/t/turn-on-light-switch-scene-or-script-based-on-motion-and-illuminance-more-conditions/257085
-
-
-    Required entities:
-      - Motion sensor (binary_sensor in motion class)
-      - Target entity (light, switch, scene or script)
-
+    Predefined scene is switched on based on movement and illuminance. And after no movement is registered, the so-called dimmed scene is switched on. 
+    And after that, the light is switched off. This blueprint uses auxiliary entities that need to be created for some input values themselves in order to set limits dynamically.
     
-    Optional features:
+    This is a fork of this blueprint.
 
-    - You can set a cutoff entity of which the value determines whether the illuminance level is low and the automation needs to trigger.
-    - You can define a blocking entity, which blocks the automation from running when this entity's state is on.
-    - You van define a turn-off blocking entity, which blocks the entity from turning off after the set delay.
-    - Time limits can also be defined to limit the time before and after the automation should trigger.
-    - If you want the entity to turn off after a certain amount of minutes, you can use the Wait Time input.
-    - If you want another entity than the target_entity to turn off after the delay, you can define a separate Turn-off entity.
-    - If you do not enable the optional entities the automation will skip these conditions.
+    https://community.home-assistant.io/t/turn-on-light-switch-scene-script-or-group-based-on-motion-and-illuminance-more-conditions
 
-
-
-    Optional entities:
-
-    - Illuminance sensor (sensor in illuminance class)
-
-    - Illuminance cutoff value  (input_number)
-    
-    - Blocking entity (any entity with state on/off)
-
-    - Time limit before (input_datetime)
-
-    - Time limit after (input_datetime)
-
-    - Turn off wait time (input_number) - will not work with script or scene target entities.
-
-    - Turn off entity (any entity_id)
+    Thank you very much.
 
   domain: automation
   input:
@@ -51,13 +20,13 @@ blueprint:
           domain: binary_sensor
           device_class: motion
     target_entity:
-      name: Target entity.
+      name: Enter the scene for the target entity.
       description: The light, switch, scene to turn on (or script to run) when the automation is triggered.
       selector:
         entity:
     target_entity_dimmed:
-      name: Target entity.
-      description: The light, switch, scene to turn on (or script to run) when the automation is triggered.
+      name: Enter the dimmed scene for the target entity.
+      description: The light, switch, scene to turn on (or script to run) after the wait time.
       selector:
         entity:   
     illuminance_sensor:
