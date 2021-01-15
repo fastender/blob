@@ -1,77 +1,78 @@
 blueprint:
-name: Appliance has finished
-description: Do something when an appliance (like a washing machine or dishwasher) has finished as detected by a power sensor.
-domain: automation
-input:
-power_sensor:
-name: Power Sensor
-description: "Power sensor entity (e.g. from a smart plug). Needs to be a switch with a current_power_w attribute"
-selector:
-entity:
-domain: switch
-starting_threshold:
-name: Starting power threshold
-description: Power threshold above which we assume the appliance has started.
-default: 5
-selector:
-number:
-min: 1.0
-max: 100.0
-unit_of_measurement: W
-mode: slider
-step: 1.0
-starting_hysteresis:
-name: Starting hysteresis
-description: Time duration the power measurement has to stay above the starting power threshold.
-default: 5
-selector:
-number:
-min: 0.25
-max: 60.0
-unit_of_measurement: min
-mode: slider
-step: 0.25
-finishing_threshold:
-name: Finishing power threshold
-description: Power threshold below which we assume the appliance has finished.
-default: 5
-selector:
-number:
-min: 1.0
-max: 100.0
-unit_of_measurement: W
-mode: slider
-step: 1.0
-finishing_hysteresis:
-name: Finishing hysteresis
-description: Time duration the power measurement has to stay below the finishing power threshold.
-default: 5
-selector:
-number:
-min: 0.25
-max: 60.0
-unit_of_measurement: min
-mode: slider
-step: 0.25
-actions:
-name: Actions
-description: Actions (e.g. pushing a notification, TTS announcement, ...)
-selector:
-action: {}
-source_url: https://gist.github.com/sbyx/6d8344d3575c9865657ac51915684696
+  name: Appliance has finished
+  description: Do something when an appliance (like a washing machine or dishwasher)
+    has finished as detected by a power sensor.
+  domain: automation
+  input:
+    power_sensor:
+      name: Power Sensor
+      description: 'Power sensor entity (e.g. from a smart plug device).'
+      selector:
+        entity:
+          domain: sensor
+    starting_threshold:
+      name: Starting power threshold
+      description: Power threshold above which we assume the appliance has started.
+      default: 5
+      selector:
+        number:
+          min: 1.0
+          max: 100.0
+          unit_of_measurement: W
+          mode: slider
+          step: 1.0
+    starting_hysteresis:
+      name: Starting hysteresis
+      description: Time duration the power measurement has to stay above the starting
+        power threshold.
+      default: 5
+      selector:
+        number:
+          min: 0.25
+          max: 60.0
+          unit_of_measurement: min
+          mode: slider
+          step: 0.25
+    finishing_threshold:
+      name: Finishing power threshold
+      description: Power threshold below which we assume the appliance has finished.
+      default: 5
+      selector:
+        number:
+          min: 1.0
+          max: 100.0
+          unit_of_measurement: W
+          mode: slider
+          step: 1.0
+    finishing_hysteresis:
+      name: Finishing hysteresis
+      description: Time duration the power measurement has to stay below the finishing
+        power threshold.
+      default: 5
+      selector:
+        number:
+          min: 0.25
+          max: 60.0
+          unit_of_measurement: min
+          mode: slider
+          step: 0.25
+    actions:
+      name: Actions
+      description: Actions (e.g. pushing a notification, TTS announcement, ...)
+      selector:
+        action: {}
+  source_url: https://gist.github.com/sbyx/6d8344d3575c9865657ac51915684696
 trigger:
 - platform: numeric_state
-entity_id: !input 'power_sensor'
-attribute: current_power_w
-for:
-minutes: !input 'starting_hysteresis'
-above: !input 'starting_threshold'
+  entity_id: !input 'power_sensor'
+  for:
+    minutes: !input 'starting_hysteresis'
+  above: !input 'starting_threshold'
 condition: []
 action:
 - wait_for_trigger:
   - platform: numeric_state
     entity_id: !input 'power_sensor'
-    attribute: current_power_w
     below: !input 'finishing_threshold'
     for:
       minutes: !input 'finishing_hysteresis'
