@@ -22,8 +22,7 @@ mode: slider
 step: 1.0
 starting_hysteresis:
 name: Starting hysteresis
-description: Time duration the power measurement has to stay above the starting
-power threshold.
+description: Time duration the power measurement has to stay above the starting power threshold.
 default: 5
 selector:
 number:
