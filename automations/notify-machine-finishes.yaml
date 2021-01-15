@@ -9,7 +9,7 @@ blueprint:
       description: 'Power sensor entity (e.g. from a smart plug device).'
       selector:
         entity:
-          domain: sensor
+          domain: switch
     starting_threshold:
       name: Starting power threshold
       description: Power threshold above which we assume the appliance has started.
@@ -61,10 +61,10 @@ blueprint:
       description: Actions (e.g. pushing a notification, TTS announcement, ...)
       selector:
         action: {}
-#  source_url: https://gist.github.com/sbyx/6d8344d3575c9865657ac51915684696
 trigger:
 - platform: numeric_state
   entity_id: !input 'power_sensor'
+  attribute: current_power_w
   for:
     minutes: !input 'starting_hysteresis'
   above: !input 'starting_threshold'
@@ -73,6 +73,7 @@ action:
 - wait_for_trigger:
   - platform: numeric_state
     entity_id: !input 'power_sensor'
+    attribute: current_power_w
     below: !input 'finishing_threshold'
     for:
       minutes: !input 'finishing_hysteresis'
