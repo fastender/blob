@@ -44,8 +44,7 @@ mode: slider
 step: 1.0
 finishing_hysteresis:
 name: Finishing hysteresis
-description: Time duration the power measurement has to stay below the finishing
-power threshold.
+description: Time duration the power measurement has to stay below the finishing power threshold.
 default: 5
 selector:
 number:
