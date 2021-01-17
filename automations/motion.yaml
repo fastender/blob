@@ -8,6 +8,17 @@ blueprint:
 
     https://community.home-assistant.io/t/turn-on-light-switch-scene-script-or-group-based-on-motion-and-illuminance-more-conditions
 
+  - service: homeassistant.turn_on
+    entity_id: !input target_entity_dimmed
+
+    target_entity_dimmed:
+      name: Enter the dimmed scene for the target entity.
+      description: The light, switch, scene to turn on (or script to run) after the wait time.
+      selector:
+        entity:   
+
+  target_entity_dimmed: !input target_entity_dimmed  
+  
     Thank you very much.
 
   domain: automation
