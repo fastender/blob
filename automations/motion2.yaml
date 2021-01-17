@@ -28,13 +28,6 @@ blueprint:
           max: 255.0
           mode: slider
           step: 1.0
-    dimming_wait:
-      name: Dimming wait time
-      description: Time to leave the target entity after the dimming
-      default:
-      selector:
-        entity:
-          domain: input_number
     illuminance_sensor:
       name: (OPTIONAL) Illuminance sensor
       description: This sensor will be used to determine the illumination.
@@ -101,7 +94,6 @@ variables:
   time_limit_before: !input time_limit_before
   time_limit_after: !input time_limit_after
   no_motion_wait: !input no_motion_wait
-  dimming_wait: !input dimming_wait
   entity_domain: "{{ states[target_entity].domain }}"
   turn_off_blocker_entity: !input turn_off_blocker_entity
   target_off_entity: !input target_off_entity
@@ -146,14 +138,12 @@ action:
       entity_id: !input motion_sensor
       from: "on"
       to: "off"
-  - delay: 
-      minutes: '{{ states[no_motion_wait].state | int }}'
   - service: light.turn_on
     data:            
       brightness: !input 'light_brightness'
-      entity_id: !input target_entity
+      entity_id: !input target_entity      
   - delay: 
-      minutes: '{{ states[dimming_wait].state | int }}'
+      minutes: '{{ states[no_motion_wait].state | int }}'
   - condition: template
     value_template: "{{ (turn_off_blocker_entity == none) or (states[turn_off_blocker_entity].state == 'off') }}"
   - choose:
