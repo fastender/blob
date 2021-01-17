@@ -1,0 +1,179 @@
+blueprint:
+  name: Turn on light, switch, scene, script or group based on motion and illuminance.
+  description: >
+    Turn on a light, switch, scene, script or group based on motion detection, and low light level.
+
+    This blueprint uses helper entities you have to create yourself for some input values, to be able to dynamically set limits. 
+    For instructions on creating the helper entities take a look in the Home Assistant Community forum topic:
+    https://community.home-assistant.io/t/turn-on-light-switch-scene-or-script-based-on-motion-and-illuminance-more-conditions/257085
+
+
+    Required entities:
+      - Motion sensor (single sensor or group)
+      - Target entity (light, switch, scene or script)
+
+    
+    Optional features:
+
+    - You can set a cutoff entity of which the value determines whether the illuminance level is low and the automation needs to trigger.
+    - You can define a blocking entity, which blocks the automation from running when this entity's state is on.
+    - You van define a turn-off blocking entity, which blocks the entity from turning off after the set delay.
+    - Time limits can also be defined to limit the time before and after the automation should trigger.
+    - If you want the entity to turn off after a certain amount of minutes, you can use the Wait Time input.
+    - If you want another entity than the target_entity to turn off after the delay, you can define a separate Turn-off entity.
+    - If you do not enable the optional entities the automation will skip these conditions.
+
+
+
+    Optional entities:
+
+    - Illuminance sensor (sensor in illuminance class)
+
+    - Illuminance cutoff value  (input_number)
+    
+    - Blocking entity (any entity with state on/off)
+
+    - Time limit before (input_datetime)
+
+    - Time limit after (input_datetime)
+
+    - Turn off wait time (input_number) - will not work with script or scene target entities.
+
+    - Turn off entity (any entity_id)
+
+  domain: automation
+  input:
+    motion_sensor:
+      name: Motion Sensor
+      description: This sensor will trigger the turning on of the target entity.
+      selector:
+        entity:
+    target_entity:
+      name: Target entity.
+      description: The light, switch, scene to turn on (or script to run) when the automation is triggered.
+      selector:
+        entity:
+    illuminance_sensor:
+      name: (OPTIONAL) Illuminance sensor
+      description: This sensor will be used to determine the illumination.
+      default:
+      selector:
+        entity:
+          domain: sensor
+          device_class: illuminance
+    illuminance_cutoff:
+      name: (OPTIONAL) Illuminance cutoff value
+      description: This input_number will be used to compare to the current illumination to determine if it is low.
+      default:
+      selector:
+        entity:
+          domain: input_number
+    blocker_entity:
+      name: (OPTIONAL) Blocking entity
+      description: If this entity's state is on, it will prevent the automation from running. E.g. sleepmode or away mode.
+      default:
+      selector:
+        entity:
+    time_limit_before:
+      name: (OPTIONAL) Only run before time.
+      description: Automation will only run when time is earlier than this input_datetime value.
+      default:
+      selector:
+        entity:
+          domain: input_datetime
+    time_limit_after:
+      name: (OPTIONAL) Only run after time.
+      description: Automation will only run when time is later than this input_datetime value.
+      default:
+      selector:
+        entity:
+          domain: input_datetime
+    no_motion_wait:
+      name: (OPTIONAL) Turn off wait time
+      description: Time to leave the target entity on after last motion is detected. If not used entity will not auto turn off.
+      default:
+      selector:
+        entity:
+          domain: input_number
+    turn_off_blocker_entity:
+      name: (OPTIONAL) Turn-off Blocking entity
+      description: If this entity's state is on, it will prevent the target entity from turning off after the set delay.
+      default:
+      selector:
+        entity:
+    target_off_entity:
+      name: (OPTIONAL) Turn-off entity
+      description: If defined, this entity will be turned off instead of the default target entity. This can be helpful when using target entities of type scene or script.
+      default:
+      selector:
+        entity:
+
+mode: restart
+max_exceeded: silent
+
+variables:
+  target_entity: !input target_entity
+  illuminance_currently: !input illuminance_sensor
+  illuminance_cutoff: !input illuminance_cutoff
+  blocker_entity: !input blocker_entity
+  time_limit_before: !input time_limit_before
+  time_limit_after: !input time_limit_after
+  no_motion_wait: !input no_motion_wait
+  entity_domain: "{{ states[target_entity].domain }}"
+  turn_off_blocker_entity: !input turn_off_blocker_entity
+  target_off_entity: !input target_off_entity
+
+trigger:
+  platform: state
+  entity_id: !input motion_sensor
+  to: 'on'
+
+condition:
+# First condition: When entity was already on because the automation ran recently, do not check illuminance because it could have increased above threshold because of a light that was just turned on.
+  - condition: template
+    value_template: "{{ (states[target_entity].state == 'on') or (illuminance_currently == none) or (illuminance_cutoff == none) or (states[illuminance_currently].state | int < states[illuminance_cutoff].state | int) }}"
+  - condition: template
+    value_template: "{{ (blocker_entity == none) or (states[blocker_entity].state == 'off') }}"
+  - condition: template
+    value_template: >
+      {% set current_time = now().strftime("%H:%M")  %}
+
+      {% if time_limit_before != none and time_limit_after == none %}
+      {{ states[time_limit_before].state > current_time }}
+      {% elif time_limit_before == none and time_limit_after != none %}
+      {{ states[time_limit_after].state < current_time }}
+      {% elif time_limit_before != none and time_limit_after != none %}
+      {% set before_limit_is_on_next_day = time_limit_after > time_limit_before  %}
+      {% if not before_limit_is_on_next_day %}
+      {{ (states[time_limit_after].state < current_time) and (states[time_limit_before].state > current_time) }}
+      {% elif before_limit_is_on_next_day %}
+      {{ (states[time_limit_before].state > current_time) or (states[time_limit_after].state < current_time) }}
+      {% endif %}
+      {% else %}
+      true
+      {% endif %}
+
+action:
+  - service: homeassistant.turn_on
+    entity_id: !input target_entity
+  - condition: template
+    value_template: "{{ no_motion_wait != none }}"
+  - wait_for_trigger:
+      platform: state
+      entity_id: !input motion_sensor
+      from: "on"
+      to: "off"
+  - delay: 
+      minutes: '{{ states[no_motion_wait].state | int }}'
+  - condition: template
+    value_template: "{{ (turn_off_blocker_entity == none) or (states[turn_off_blocker_entity].state == 'off') }}"
+  - choose:
+    - conditions:
+        - condition: template
+          value_template: "{{ (target_off_entity != none) }}"
+      sequence:
+        - service: homeassistant.turn_off
+          entity_id: !input target_off_entity
+    default:
+      - service: homeassistant.turn_off
+        entity_id: !input target_entity
