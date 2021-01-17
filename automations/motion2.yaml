@@ -1,48 +1,13 @@
 blueprint:
   name: Turn on light, switch, scene, script or group based on motion and illuminance.
   description: >
-    Turn on a light, switch, scene, script or group based on motion detection, and low light level.
-
-    This blueprint uses helper entities you have to create yourself for some input values, to be able to dynamically set limits. 
-    For instructions on creating the helper entities take a look in the Home Assistant Community forum topic:
-    https://community.home-assistant.io/t/turn-on-light-switch-scene-or-script-based-on-motion-and-illuminance-more-conditions/257085
-
-
-    Required entities:
-      - Motion sensor (single sensor or group)
-      - Target entity (light, switch, scene or script)
-
+    Predefined scene is switched on based on movement and illuminance. And after no movement is registered, the so-called dimmed scene is switched on. And after that, the light is switched off. This blueprint uses auxiliary entities that need to be created for some input values themselves in order to set limits dynamically.
     
-    Optional features:
-
-    - You can set a cutoff entity of which the value determines whether the illuminance level is low and the automation needs to trigger.
-    - You can define a blocking entity, which blocks the automation from running when this entity's state is on.
-    - You van define a turn-off blocking entity, which blocks the entity from turning off after the set delay.
-    - Time limits can also be defined to limit the time before and after the automation should trigger.
-    - If you want the entity to turn off after a certain amount of minutes, you can use the Wait Time input.
-    - If you want another entity than the target_entity to turn off after the delay, you can define a separate Turn-off entity.
-    - If you do not enable the optional entities the automation will skip these conditions.
-
-
-
-    Optional entities:
-
-    - Illuminance sensor (sensor in illuminance class)
-
-    - Illuminance cutoff value  (input_number)
-    
-    - Blocking entity (any entity with state on/off)
-
-    - Time limit before (input_datetime)
-
-    - Time limit after (input_datetime)
-
-    - Turn off wait time (input_number) - will not work with script or scene target entities.
-
-    - Turn off entity (any entity_id)
+    This is a fork of this blueprint.
+    https://community.home-assistant.io/t/turn-on-light-switch-scene-script-or-group-based-on-motion-and-illuminance-more-conditions
 
   domain: automation
-  input:
+  input:  
     motion_sensor:
       name: Motion Sensor
       description: This sensor will trigger the turning on of the target entity.
@@ -53,6 +18,23 @@ blueprint:
       description: The light, switch, scene to turn on (or script to run) when the automation is triggered.
       selector:
         entity:
+    light_brightness:
+      name: Brightness for the dimmed light.
+      description: Choose the brightness.
+      default: 25
+      selector:
+        number:
+          min: 1.0
+          max: 255.0
+          mode: slider
+          step: 1.0
+    dimming_wait:
+      name: Dimming wait time
+      description: Time to leave the target entity after the dimming
+      default:
+      selector:
+        entity:
+          domain: input_number
     illuminance_sensor:
       name: (OPTIONAL) Illuminance sensor
       description: This sensor will be used to determine the illumination.
@@ -119,6 +101,7 @@ variables:
   time_limit_before: !input time_limit_before
   time_limit_after: !input time_limit_after
   no_motion_wait: !input no_motion_wait
+  dimming_wait: !input dimming_wait
   entity_domain: "{{ states[target_entity].domain }}"
   turn_off_blocker_entity: !input turn_off_blocker_entity
   target_off_entity: !input target_off_entity
@@ -165,6 +148,12 @@ action:
       to: "off"
   - delay: 
       minutes: '{{ states[no_motion_wait].state | int }}'
+  - service: light.turn_on
+    data:            
+      brightness: !input 'light_brightness'
+      entity_id: !input target_entity
+  - delay: 
+      minutes: '{{ states[dimming_wait].state | int }}'
   - condition: template
     value_template: "{{ (turn_off_blocker_entity == none) or (states[turn_off_blocker_entity].state == 'off') }}"
   - choose:
