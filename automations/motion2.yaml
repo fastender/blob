@@ -1,5 +1,5 @@
 blueprint:
-  name: Turn on light, switch, scene, script or group based on motion and illuminance.
+  name: Motion sensor controls the light
   description: >
     Predefined scene is switched on based on movement and illuminance. And after no movement is registered, the so-called dimmed scene is switched on. And after that, the light is switched off. This blueprint uses auxiliary entities that need to be created for some input values themselves in order to set limits dynamically.
     
